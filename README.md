@@ -2,6 +2,9 @@
 
 emacs-lillypad is my emacs configuration which allows new users to get used to emacs quickly without a difficult setup
 
+# Screenshots
+![Screenshot](img/emacs-lillypad.png)
+
 # Features
 - Autocompletion
 - Syntax Checking
