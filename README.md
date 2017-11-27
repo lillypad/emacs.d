@@ -1,3 +1,5 @@
+[![MIT](https://img.shields.io/packagist/l/doctrine/orm.svg?maxAge=2592000?style=plastic)](https://github.com/lillypad/emacs-lillypad/blob/master/LICENSE)
+
 # emacs-lillypad
 
 emacs-lillypad is my emacs configuration which allows new users to get used to emacs quickly without a difficult setup
