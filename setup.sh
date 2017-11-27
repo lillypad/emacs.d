@@ -1,5 +1,5 @@
 #!/bin/bash
-sudo apt-get install -y emacs python npm nodejs clang git
+sudo apt-get install -y emacs python npm nodejs clang git python-pip
 sudo ln -sf /usr/bin/nodejs /usr/bin/node
 sudo npm install -g csslint jshint tern
 git clone https://github.com/lillypad/emacs-lillypad.git
