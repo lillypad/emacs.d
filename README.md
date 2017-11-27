@@ -1,4 +1,6 @@
 [![MIT](https://img.shields.io/packagist/l/doctrine/orm.svg?maxAge=2592000?style=plastic)](https://github.com/lillypad/emacs-lillypad/blob/master/LICENSE)
+[Python 2](https://img.shields.io/badge/Python-2-brightgreen.svg)
+[Python 3](https://img.shields.io/badge/Python-3-brightgreen.svg)
 
 # emacs-lillypad
 
