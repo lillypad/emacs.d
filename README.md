@@ -17,10 +17,17 @@ emacs-lillypad is my emacs configuration which allows new users to get used to e
 
 Manual:
 ```bash
-sudo apt-get install -y emacs python pip virtualenv npm nodejs pylint clang
-sudo ln -s /usr/bin/nodejs /usr/bin/node
+sudo apt-get install -y emacs python npm nodejs clang git
+sudo ln -sf /usr/bin/nodejs /usr/bin/node
 sudo npm install -g csslint jshint
-curl -LSso ~/.tern-config https://raw.githubusercontent.com/lillypad/emacs-lillypad/master/.tern-config && curl -LSso ~/.emacs https://raw.githubusercontent.com/lillypad/emacs-lillypad/master/.emacs && emacs
+git clone https://github.com/lillypad/emacs-lillypad.git
+cd emacs-lillypad/
+sudo pip install -r requirements.txt
+cp -r .emacs.d ~/.emacs.d
+cp .emacs ~/.emacs
+cp .tern-config ~/.tern-config
+cd ~
+emacs
 ```
 
 Automatic:

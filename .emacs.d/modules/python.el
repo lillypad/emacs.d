@@ -1,0 +1,11 @@
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;Python IDE Configuration
+(setq python-indent-guess-indent-offset nil)
+(setq python-indent-offset 4)
+(defun my/python-mode-hook ()
+  (autopair-mode)
+  (setq tab-width 4)
+  (setq jedi:complete-on-dot t)
+  (add-to-list 'company-backends 'company-jedi))
+(add-hook 'python-mode-hook 'my/python-mode-hook)
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
