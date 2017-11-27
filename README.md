@@ -4,6 +4,7 @@
 [![npm](https://img.shields.io/npm/v/npm.svg)]()
 [![PyPI](https://img.shields.io/pypi/v/nine.svg)]()
 [![GitHub language count](https://img.shields.io/github/languages/count/badges/shields.svg)]()
+[![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/badges/shields.svg)]()
 
 # emacs-lillypad
 
