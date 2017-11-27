@@ -1,8 +1,9 @@
-[![MIT](https://img.shields.io/packagist/l/doctrine/orm.svg?maxAge=2592000?style=plastic)](https://github.com/lillypad/emacs-lillypad/blob/master/LICENSE)
+[![GitHub license](https://img.shields.io/github/license/lillypad/emacs-lillypad.svg)](https://github.com/lillypad/emacs-lillypad/blob/master/LICENSE)
 [![Python 2](https://img.shields.io/badge/Python-2-brightgreen.svg)](https://github.com/lillypad/emacs-lillypad/)
 [![Python 3](https://img.shields.io/badge/Python-3-brightgreen.svg)](https://github.com/lillypad/emacs-lillypad/)
 [![npm](https://img.shields.io/npm/v/npm.svg)]()
 [![PyPI](https://img.shields.io/pypi/v/nine.svg)]()
+[![GitHub issues](https://img.shields.io/github/issues/lillypad/emacs-lillypad.svg)](https://github.com/lillypad/emacs-lillypad/issues)
 
 # emacs-lillypad
 
