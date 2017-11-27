@@ -3,8 +3,6 @@
 [![Python 3](https://img.shields.io/badge/Python-3-brightgreen.svg)](https://github.com/lillypad/emacs-lillypad/)
 [![npm](https://img.shields.io/npm/v/npm.svg)]()
 [![PyPI](https://img.shields.io/pypi/v/nine.svg)]()
-[![GitHub language count](https://img.shields.io/github/languages/count/badges/shields.svg)]()
-[![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/badges/shields.svg)]()
 
 # emacs-lillypad
 
