@@ -7,7 +7,7 @@
 
 # emacs-lillypad
 
-emacs-lillypad is my emacs configuration which allows new users to get used to emacs quickly without a difficult setup
+An Emacs Configuration for Humans
 
 # Screenshots
 ![Screenshot](img/emacs-lillypad.png)
