@@ -1,5 +1,10 @@
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;; generic.el --- Generic Configuration
+
+;;; Commentary:
 ;; Generic Configuration
+
+;;; Code:
+
 (xterm-mouse-mode)
 (setq-default tab-width 4)
 (setq-default indent-tabs-mode nil)
@@ -16,4 +21,5 @@
 (push (cons "\\*shell\\*" display-buffer--same-window-action) display-buffer-alist)
 (global-hl-line-mode 1)
 (set-face-attribute hl-line-face nil :underline t)
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;;; generic.el ends here

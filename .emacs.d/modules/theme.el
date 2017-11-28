@@ -1,5 +1,10 @@
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;; theme.el --- Theme Configuration
+
+;;; Commentary:
 ;; Theme Configuration
+
+;;; Code:
+
 (add-hook 'prog-mode-hook 'rainbow-delimiters-mode)
 (load-theme 'airline-doom-molokai t)
 (load-theme 'badwolf t)
@@ -16,4 +21,5 @@
  '(rainbow-delimiters-depth-6-face ((t (:foreground "orchid"))))
  '(rainbow-delimiters-depth-7-face ((t (:foreground "spring green"))))
  '(rainbow-delimiters-depth-8-face ((t (:foreground "sienna1")))))
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;;; theme.el ends here

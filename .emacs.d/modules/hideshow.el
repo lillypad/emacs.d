@@ -1,6 +1,10 @@
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; HideShow Configuration
+;;; hideshow.el --- Hideshow Configuration
 
-;;;; Hideshow Default Hook
+;;; Commentary:
+;; Hideshow Configuration
+
+;;; Code:
+
 (add-hook 'prog-mode-hook 'hs-org/minor-mode)
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;;; hideshow.el ends here

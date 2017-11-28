@@ -1,22 +1,45 @@
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;------------lillypad Emacs Configuration--------------;;
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;; emacs-lillypad --- An Emacs Configuration for Humans
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; Initial Setup Configuration
-(require 'package)
+;; Author: Lilly Chalupowski
+;; URL: http://github.com/lillypad/emacs-lillypad
+
+;; The MIT License (MIT)
+
+;; Copyright (C) 2017 Lilly Chalupowski
+
+;; Permission is hereby granted, free of charge, to any person obtaining a copy
+;; of this software and associated documentation files (the "Software"), to deal
+;; in the Software without restriction, including without limitation the rights
+;; to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+;; copies of the Software, and to permit persons to whom the Software is
+;; furnished to do so, subject to the following conditions:
+
+;; The above copyright notice and this permission notice shall be included in all
+;; copies or substantial portions of the Software.
+
+;; THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+;; IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+;; FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+;; AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+;; LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+;; OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+;; SOFTWARE.
+
+;;; Commentary:
+;; Description: An Emacs Configuration for Humans
+;; Author: Lilly Chalupowski
+
+;;; Code:
+
 (require 'cl)
+(require 'package)
 
-;;;; Show Compile Buffer on Fatal Errors Only
 (setq warning-minimum-level :emergency)
 
-;;;; Initialize Package
 (package-initialize)
 
-;;;; Package Repos
 (add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/"))
 
-;;;; Required Packages
 (defvar required-packages
   '(
     flycheck
@@ -50,28 +73,22 @@
     js2-refactor
     ))
 
-;;;; Check if Required Packages are Installed
 (defun packages-installed-p ()
   (loop for p in required-packages
         when (not (package-installed-p p)) do (return nil)
         finally (return t)))
 
-;;;; Install Packages if Missing
 (unless (packages-installed-p)
-  ; check for new packages (package versions)
   (message "%s" "Emacs is now refreshing its package database...")
   (package-refresh-contents)
   (message "%s" " done.")
-  ; install the missing packages
   (dolist (p required-packages)
     (when (not (package-installed-p p))
       (package-install p))))
 
-;;;; Require Packages
 (dolist (p required-packages)
   (require p))
 
-;;;; Auto Hide Compile Buffer if Successfull
 (setq compilation-finish-functions
   (lambda (buf str)
     (if (null (string-match ".*exited abnormally.*" str))
@@ -82,14 +99,12 @@
           (switch-to-buffer nil)))
           (message "No Compilation Errors!")))))
 
-;;;; Load User Modules
 (defun load-directory (dir)
   (let ((load-it (lambda (f)
     (load-file (concat (file-name-as-directory dir) f)))
     ))
   (mapc load-it (directory-files dir nil "\\.el$"))))
 (load-directory "~/.emacs.d/modules/")
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.

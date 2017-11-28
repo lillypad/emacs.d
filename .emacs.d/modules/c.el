@@ -1,16 +1,18 @@
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; C IDE Configuration
+;;; c.el --- C Mode Configuration
 
-;;;; Set C Basic Offset
-(setq c-basic-offset 2)
+;;; Commentary:
+;; C Programming IDE
 
-;;;; Initialize Company C Headers
+;;; Code:
+
 (add-to-list 'company-backends 'company-c-headers)
 
-;;;; Setup CMake File Types
-(setq auto-mode-alist
-          (append
-           '(("CMakeLists\\.txt\\'" . cmake-mode))
-           '(("\\.cmake\\'" . cmake-mode))
-           auto-mode-alist))
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(defun my/c-mode-common-hook ()
+  (setq c-basic-offset 2)
+  (setq auto-mode-alist
+        (append
+         '(("CMakeLists\\.txt\\'" . cmake-mode))
+         '(("\\.cmake\\'" . cmake-mode))
+         auto-mode-alist)))
+
+;;; c.el ends here

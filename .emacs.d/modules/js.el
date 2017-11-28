@@ -1,7 +1,10 @@
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; Javascript IDE Configuration
+;;; js.el --- JavaScript IDE Configuration
 
-;;;; Initialisation
+;;; Commentary:
+;; JavaScript IDE Configuration
+
+;;; Code:
+
 (mapc (lambda(p) (require p)) '(js2-mode tern company company-tern jquery-doc js2-refactor))
 (jquery-doc-setup)
 (add-to-list 'company-backends 'company-tern)
@@ -17,4 +20,5 @@
   (interactive)
   (jquery-doc (thing-at-point 'word)))
 (global-set-key [f2] 'jquery-doc-at-point)
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;;; js.el ends here
