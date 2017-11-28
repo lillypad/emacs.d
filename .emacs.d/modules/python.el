@@ -8,6 +8,7 @@
 (setq python-indent-guess-indent-offset nil)
 (setq python-indent-offset 4)
 (defun my/python-mode-hook ()
+  "Python Hook Configuration."
   (autopair-mode)
   (setq tab-width 4)
   (setq jedi:complete-on-dot t)
