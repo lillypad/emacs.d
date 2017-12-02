@@ -76,6 +76,7 @@
     ))
 
 (defun packages-installed-p ()
+  "Install package-list if not installed."
   (loop for p in required-packages
         when (not (package-installed-p p)) do (return nil)
         finally (return t)))
@@ -102,6 +103,7 @@
           (message "No Compilation Errors!")))))
 
 (defun load-directory (dir)
+  "DIR: Directory to load user configuration modules."
   (let ((load-it (lambda (f)
     (load-file (concat (file-name-as-directory dir) f)))
     ))
