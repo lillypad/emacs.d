@@ -10,7 +10,7 @@
 An Emacs Configuration for Humans
 
 # Screenshots
-![Screenshot](img/term.png)
+![Screenshot](img/emacs-lillypad.png)
 
 # Features
 - Autocompletion
