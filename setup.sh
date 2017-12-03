@@ -1,12 +1,23 @@
 #!/bin/bash
-sudo apt-get install -y emacs python npm nodejs clang git python-pip
+YUM_CMD=$(which yum)
+APT_GET_CMD=$(which apt-get)
+EMERGE_CMD=$(which emerge)
+PACMAN_CMD=$(which pacman)
+ if [[ ! -z $YUM_CMD ]]; then
+    sudo yum -y install emacs python npm nodejs clang git python-pip
+ elif [[ ! -z $APT_GET_CMD ]]; then
+    sudo apt-get install -y emacs python npm nodejs clang git python-pip
+ elif [[ ! -z $EMERGE_CMD ]]; then
+    sudo emerge --ask python emacs npm nodejs clang git python-pip
+ else
+    echo "Unable to Detect Supported Package Manager!"
+    exit 1;
+ fi
 sudo ln -sf /usr/bin/nodejs /usr/bin/node
 sudo npm install -g csslint jshint tern
-git clone https://github.com/lillypad/emacs-lillypad.git
-cd emacs-lillypad/
+git clone https://github.com/lillypad/emacs.d.git ~/.emacs.d/
+cd .emacs.d/
 sudo pip install -r requirements.txt
-cp -r .emacs.d ~/.emacs.d
-cp .emacs ~/.emacs
 cp .tern-config ~/.tern-config
 cd ~
 emacs
