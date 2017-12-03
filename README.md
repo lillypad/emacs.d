@@ -5,7 +5,7 @@
 [![PyPI](https://img.shields.io/pypi/v/nine.svg)]()
 [![GitHub issues](https://img.shields.io/github/issues/lillypad/emacs-lillypad.svg)](https://github.com/lillypad/emacs-lillypad/issues)
 
-# emacs-lillypad
+# lillypd's emacs.d
 
 An Emacs Configuration for Humans
 
