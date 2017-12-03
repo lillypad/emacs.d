@@ -23,7 +23,6 @@ elif [[ ! -z $EMERGE_CMD ]]; then
     sudo emerge --ask app-editors/emacs \
          dev-lang/python \
          dev-python/pip \
-         dev-python/virtualenv \
          net-libs/nodejs \
          sys-devel/clang
 elif [[ ! -z $PACMAN_CMD ]]; then

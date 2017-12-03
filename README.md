@@ -22,9 +22,38 @@ An Emacs Configuration for Humans
 
 # Installation
 
-Manual:
+**Dependencies:**
+- [`python`](https://www.python.org/)
+- [`npm`](https://www.npmjs.com/)
+- [`nodejs`](https://nodejs.org/en/)
+- [`clang`](https://clang.llvm.org/get_started.html)
+- [`git`](https://git-scm.com/documentation)
+- [`pip`](https://pip.pypa.io/en/stable/)
+
+**Manual:**
+
+__Ubuntu / Debian__
 ```bash
-sudo apt-get install -y emacs python npm nodejs clang git python-pip
+sudo apt-get install -y emacs \
+    python \
+    npm \
+    nodejs \
+    clang \
+    git \
+    python-pip
+```
+
+__Gentoo:__
+```bash
+sudo emerge --ask app-editors/emacs \
+    dev-lang/python \
+    dev-python/pip \
+    net-libs/nodejs \
+    sys-devel/clang
+```
+
+__Setup:__
+```bash
 sudo ln -sf /usr/bin/nodejs /usr/bin/node
 sudo npm install -g csslint jshint tern
 git clone https://github.com/lillypad/emacs.d.git ~/.emacs.d/
@@ -35,7 +64,7 @@ cd ~
 emacs
 ```
 
-Automatic:
+**Automatic:**
 ```bash
 curl -s https://raw.githubusercontent.com/lillypad/emacs.d/master/setup.sh | bash
 ```
