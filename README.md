@@ -18,6 +18,7 @@ An Emacs Configuration for Humans
 - Snippets
 - Rainbow Delimiters
 - Powerline
+- Magit
 
 # Installation
 
@@ -51,3 +52,4 @@ Once in emacs do: `M-x jedi:install-server RET`.
 - <kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>U</kbd> Uncomment Region
 - <kbd>ALT</kbd>+<kbd>J</kbd> Expand Snippet
 - <kbd>ALT</kbd>+<kbd>N</kbd> Next Snippet
+- <kbd>CTRL</kbd>+<kbd>X</kbd><kbd>G</kbd>
