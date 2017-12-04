@@ -9,6 +9,22 @@
 
 An Emacs Configuration for Humans
 
+# Table of Contents
+- [`Dependencies`](#dependencies)
+- [`Quick Installation`](#quick-installation)
+- [`Manual Installation`](#manual-installation)
+- [`Screenshots`](#screenshots)
+- [`Features`](#features)
+- [`keybindings`](#keybindings)
+
+
+# Quick Installation
+```bash
+curl -s https://raw.githubusercontent.com/lillypad/emacs.d/master/setup.sh | bash
+```
+
+Once in emacs do: `M-x jedi:install-server RET`.
+
 # Screenshots
 ![Screenshot](img/emacs-lillypad.png)
 
@@ -20,9 +36,7 @@ An Emacs Configuration for Humans
 - Powerline
 - Magit
 
-# Installation
-
-**Dependencies:**
+# Dependencies
 - [`python`](https://www.python.org/)
 - [`npm`](https://www.npmjs.com/)
 - [`nodejs`](https://nodejs.org/en/)
@@ -30,7 +44,7 @@ An Emacs Configuration for Humans
 - [`git`](https://git-scm.com/documentation)
 - [`pip`](https://pip.pypa.io/en/stable/)
 
-**Manual:**
+# Manual Installation
 
 __Ubuntu / Debian__
 ```bash
@@ -62,11 +76,6 @@ sudo pip install -r requirements.txt
 cp .tern-config ~/.tern-config
 cd ~
 emacs
-```
-
-**Automatic:**
-```bash
-curl -s https://raw.githubusercontent.com/lillypad/emacs.d/master/setup.sh | bash
 ```
 
 Once in emacs do: `M-x jedi:install-server RET`.
