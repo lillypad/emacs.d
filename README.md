@@ -15,7 +15,7 @@ An Emacs Configuration for Humans
 - [`Manual Installation`](#manual-installation)
 - [`Screenshots`](#screenshots)
 - [`Features`](#features)
-- [`keybindings`](#keybindings)
+- [`Keybindings`](#keybindings)
 
 
 # Quick Installation
