@@ -38,7 +38,7 @@
 
 (package-initialize)
 
-(add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/"))
+(add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/"))
 
 (defvar required-packages
   '(
