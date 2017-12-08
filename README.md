@@ -35,6 +35,7 @@ Once in emacs do: `M-x jedi:install-server RET`.
 - Rainbow Delimiters
 - Powerline
 - Magit
+- Spell Check
 
 # Dependencies
 - [`python`](https://www.python.org/)
@@ -90,3 +91,4 @@ Once in emacs do: `M-x jedi:install-server RET`.
 - <kbd>ALT</kbd>+<kbd>N</kbd> Next Snippet
 - <kbd>CTRL</kbd>+<kbd>X</kbd> <kbd>G</kbd> Open Magit
 - <kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>S</kbd> Spell Checking
+- <kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>D</kbd> Git Diff
