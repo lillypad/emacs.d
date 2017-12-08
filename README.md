@@ -36,6 +36,7 @@ Once in emacs do: `M-x jedi:install-server RET`.
 - Powerline
 - Magit
 - Spell Check
+- Git Diff
 
 # Dependencies
 - [`python`](https://www.python.org/)
