@@ -3,7 +3,7 @@
 [![Python 3](https://img.shields.io/badge/Python-3-brightgreen.svg)](https://github.com/lillypad/emacs-lillypad/)
 [![npm](https://img.shields.io/npm/v/npm.svg)]()
 [![PyPI](https://img.shields.io/pypi/v/nine.svg)]()
-[![GitHub issues](https://img.shields.io/github/issues/lillypad/emacs-lillypad.svg)](https://github.com/lillypad/emacs.d/issues)
+[![GitHub issues](https://img.shields.io/github/issues/lillypad/emacs.d.svg)](https://github.com/lillypad/emacs.d/issues)
 
 # lillypad's emacs.d
 
