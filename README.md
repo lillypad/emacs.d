@@ -93,3 +93,5 @@ Once in emacs do: `M-x jedi:install-server RET`.
 - <kbd>CTRL</kbd>+<kbd>X</kbd> <kbd>G</kbd> Open Magit
 - <kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>S</kbd> Spell Checking
 - <kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>D</kbd> Git Diff
+- <kbd>TAB</kbd> Completion Cycle Next
+- <kbd>SHIFT</kbd>+<kbd>TAB</kbd> Completion Cycle Previous
