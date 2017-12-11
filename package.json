@@ -1,0 +1,28 @@
+{
+  "name": "emacs.d",
+  "version": "1.0.0",
+  "description": "An Emacs Configuration for Humans",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lillypad/emacs.d.git"
+  },
+  "keywords": [
+    "emacs",
+    "config"
+  ],
+  "author": "Lilly Chalupowski",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lillypad/emacs.d/issues"
+  },
+  "homepage": "https://github.com/lillypad/emacs.d#readme",
+  "dependencies": {
+    "csslint": "^1.0.5",
+    "jshint": "^2.9.5",
+    "tern": "^0.21.0"
+  }
+}

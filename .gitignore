@@ -3,3 +3,4 @@
 .python-environments/*
 elpa/*
 games/*
+node_modules/*
