@@ -7,7 +7,6 @@
 
 (defun my/lisp-mode-hook ()
   "Lisp Mode Hook with Slime."
-  (setq inferior-lisp-program (shell-command-to-string "which sbcl"))
   (if (= (shell-command "which sbcl") 0)
       (setq inferior-lisp-program (shell-command-to-string "which sbcl"))
     (if (= (shell-command "which clisp") 0)
