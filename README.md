@@ -73,6 +73,11 @@ sudo emerge --ask app-editors/emacs \
 
 __Setup:__
 ```bash
+mkdir -p ~/.golang/
+export GOPATH=~/.golang
+echo "GOPATH=~/.golang" >> ~/.bashrc
+go get -u github.com/nsf/gocode
+sudo cp ~/.golang/bin/gocode /usr/bin/gocode
 sudo ln -sf /usr/bin/nodejs /usr/bin/node
 sudo npm install -g csslint jshint tern
 git clone https://github.com/lillypad/emacs.d.git ~/.emacs.d/
