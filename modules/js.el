@@ -5,6 +5,7 @@
 
 ;;; Code:
 
+(setq tern-command (append tern-command '("--no-port-file")))
 (mapc (lambda(p) (require p)) '(js2-mode tern company company-tern jquery-doc js2-refactor))
 (jquery-doc-setup)
 (add-to-list 'company-backends 'company-tern)
