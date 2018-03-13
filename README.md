@@ -40,6 +40,8 @@ Once in emacs do: `M-x jedi:install-server RET`.
 - Slime
   - sbcl
   - clisp
+- ActionScript
+- Snort Major Mode
 
 # Dependencies
 - [`python`](https://www.python.org/)

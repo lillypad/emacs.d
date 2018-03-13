@@ -40,8 +40,18 @@
 
 (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/"))
 
+(defun load-directory (dir)
+  "DIR: Directory to load all el files."
+  (let ((load-it (lambda (f)
+                   (load-file (concat (file-name-as-directory dir) f)))
+		     ))
+	(mapc load-it (directory-files dir nil "\\.el$"))))
+
+(load-directory "~/.emacs.d/packages/")
+
 (defvar required-packages
   '(
+    actionscript-mode
     yara-mode
     go-mode
     company-go
@@ -127,7 +137,7 @@
  '(ediff-split-window-function (quote split-window-horizontally))
  '(package-selected-packages
    (quote
-    (yara-mode company-go go-mode slime slime-company magit company-php php-mode autopair yasnippet-snippets flycheck flycheck-popup-tip flycheck-pycheckers popwin popup js2-refactor jquery-doc company tern js2-mode zone-rainbow zone-nyan rainbow-delimiters markdown-mode highlight-indent-guides hideshowvis hideshow-org company-tern company-rtags company-quickhelp company-jedi company-c-headers cmake-mode clojure-mode badwolf-theme airline-themes))))
+    (actionscript-mode yara-mode company-go go-mode slime slime-company magit company-php php-mode autopair yasnippet-snippets flycheck flycheck-popup-tip flycheck-pycheckers popwin popup js2-refactor jquery-doc company tern js2-mode zone-rainbow zone-nyan rainbow-delimiters markdown-mode highlight-indent-guides hideshowvis hideshow-org company-tern company-rtags company-quickhelp company-jedi company-c-headers cmake-mode clojure-mode badwolf-theme airline-themes))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
