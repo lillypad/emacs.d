@@ -42,11 +42,23 @@ Once in emacs do: `M-x jedi:install-server RET`.
 - Spell Check
 - Git Diff
 - Slime
-  - sbcl
-  - clisp
+- Alchemist
+
+# Supported Languages:
+- Lisp
 - ActionScript
-- Snort Major Mode
+- Suricata IDS/IPS
+- Snort IDS/IPS
+- Yara
 - Powershell
+- Elixir
+- Golang
+- C with Clang
+- C++ with Clang
+- Python
+- Javascript
+- JSON
+- Markdown
 
 # Dependencies
 - [`python`](https://www.python.org/)

@@ -11,7 +11,8 @@ if [[ ! -z $YUM_CMD ]]; then
          clang \
          git \
          python-pip \
-         golang-go
+         golang-go \
+         elixir
 elif [[ ! -z $APT_GET_CMD ]]; then
     sudo apt-get install -y emacs \
          python \
@@ -20,14 +21,16 @@ elif [[ ! -z $APT_GET_CMD ]]; then
          clang \
          git \
          python-pip \
-         golang-go
+         golang-go \
+         elixir
 elif [[ ! -z $EMERGE_CMD ]]; then
     sudo emerge --ask app-editors/emacs \
          dev-lang/python \
          dev-python/pip \
          net-libs/nodejs \
          sys-devel/clang \
-         dev-lang/go
+         dev-lang/go \
+         dev-lang/elixir
 elif [[ ! -z $PACMAN_CMD ]]; then
     sudo pacman --noconfirm -S emacs \
          python \
@@ -36,7 +39,8 @@ elif [[ ! -z $PACMAN_CMD ]]; then
          clang \
          git \
          python-pip \
-         golang-go
+         golang-go \
+         elixir
 else
    echo "Unable to Detect Supported Package Manager!"
    exit 1;
