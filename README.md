@@ -15,6 +15,7 @@
 - [`Manual Installation`](#manual-installation)
 - [`Screenshots`](#screenshots)
 - [`Features`](#features)
+- [`Supported Languages`](#supported-languages)
 - [`Keybindings`](#keybindings)
 
 
