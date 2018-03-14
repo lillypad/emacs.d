@@ -79,7 +79,9 @@ sudo apt-get install -y emacs \
     nodejs \
     clang \
     git \
-    python-pip
+    python-pip \
+    golang-go \
+    elixir
 ```
 
 __Gentoo:__
@@ -88,7 +90,9 @@ sudo emerge --ask app-editors/emacs \
     dev-lang/python \
     dev-python/pip \
     net-libs/nodejs \
-    sys-devel/clang
+    sys-devel/clang \
+    dev-lang/go \
+    dev-lang/elixir
 ```
 
 __Setup:__
