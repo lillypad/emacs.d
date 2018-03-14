@@ -46,6 +46,7 @@ Once in emacs do: `M-x jedi:install-server RET`.
   - clisp
 - ActionScript
 - Snort Major Mode
+- Powershell
 
 # Dependencies
 - [`python`](https://www.python.org/)
