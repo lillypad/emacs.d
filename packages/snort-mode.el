@@ -95,7 +95,7 @@
     "rr" "eol" "nop" "ts" "sec" "esec" "lsrr" "lsrre" "ssrr" "satid" "to_client" "to_server" "from_client"
     "from_server" "established" "not_established" "stateless" "no_stream" "only_stream" "no_frag" "only_frag"
     "set" "setx" "unset" "toggle" "isset" "isnotset" "noalert" "limit" "treshold" "count" "str_offset" "str_depth"
-    "tagged")
+    "tagged" "http" "ssl" "tls" "ftp" "smb" "dns")
   "Snort keywords.")
 
 (defvar snort-actions-regexp (regexp-opt snort-actions 'words))
