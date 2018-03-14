@@ -19,6 +19,10 @@
 
 
 # Quick Installation
+
+Run this one command and you are done! :stuck_out_tongue_winking_eye:
+
+
 ```bash
 curl -s https://raw.githubusercontent.com/lillypad/emacs.d/master/setup.sh | bash
 ```
