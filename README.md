@@ -7,7 +7,7 @@
 
 # lillypad's emacs.d
 
-An Emacs Configuration for Humans
+:sparkles: An Emacs Configuration for Humans :sparkles:
 
 # Table of Contents
 - [`Dependencies`](#dependencies)
