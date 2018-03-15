@@ -34,6 +34,7 @@ Once in emacs do: `M-x jedi:install-server RET`.
 ![Screenshot](img/emacs-lillypad.png)
 
 # Features
+- Package Load Optimization
 - Autocompletion
 - Syntax Checking
 - Snippets

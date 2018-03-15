@@ -105,6 +105,14 @@
     badwolf-theme
     highlight-indent-guides))
 
+(defvar required-packages-clojure '(clojure-mode))
+
+(defvar required-packages-php '(php-mode company-php))
+
+(defvar required-packages-powershell '(powershell))
+
+(defvar required-packages-yara '(yara-mode))
+
 (defvar required-packages-markdown '(markdown-mode))
 
 (defvar required-packages-actionscript '(actionscript-mode))
