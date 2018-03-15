@@ -17,6 +17,9 @@
 - [`Features`](#features)
 - [`Supported Languages`](#supported-languages)
 - [`Keybindings`](#keybindings)
+- [`Feature Requests`](#feature-requests)
+- [`Contributing`](#contributing)
+- [`Special Thanks`](#special-thanks)
 
 
 # Quick Installation
@@ -129,3 +132,17 @@ Once in emacs do: `M-x jedi:install-server RET`.
 - <kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>D</kbd> Git Diff
 - <kbd>TAB</kbd> Completion Cycle Next
 - <kbd>SHIFT</kbd>+<kbd>TAB</kbd> Completion Cycle Previous
+
+# Feature Requests:
+Add a feature request under issues and I may be able to add it in.
+
+# Contributing
+I will accept pull requests after reviewing them.
+
+# Special Thanks
+- [`oblivia-simplex`](https://github.com/oblivia-simplex)
+  - Converted me from Vim to Emacs
+- [BobuSumisu](sobuSumisu/snort-mode)
+  - Creator of `snort-mode` (I've added a few improvements)
+
+If you like this project buy me a drink :wine_glass:
