@@ -1,7 +1,7 @@
 ;;; init.el --- An Emacs Configuration for Humans
 
 ;; Author: Lilly Chalupowski
-;; URL: http://github.com/lillypad/emacs-lillypad
+;; URL: http://github.com/lillypad/emacs.d
 
 ;; The MIT License (MIT)
 
