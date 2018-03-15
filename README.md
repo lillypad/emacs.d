@@ -10,12 +10,12 @@
 :sparkles: An Emacs Configuration for Humans :sparkles:
 
 # Table of Contents
-- [`Dependencies`](#dependencies)
 - [`Quick Installation`](#quick-installation)
 - [`Manual Installation`](#manual-installation)
 - [`Screenshots`](#screenshots)
 - [`Features`](#features)
 - [`Supported Languages`](#supported-languages)
+- [`Dependencies`](#dependencies)
 - [`Keybindings`](#keybindings)
 - [`Feature Requests`](#feature-requests)
 - [`Contributing`](#contributing)
