@@ -5,7 +5,6 @@
 
 ;;; Code:
 
-
 (defun my/emacs-lisp-mode-hook ()
   "ELisp Mode Hook."
   (autopair-mode))

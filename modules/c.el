@@ -5,10 +5,11 @@
 
 ;;; Code:
 
-(add-to-list 'company-backends 'company-c-headers)
-
 (defun my/c-mode-common-hook ()
   "C Programming Mode Hook."
+  (dolist (p required-packages-c)
+    (require p))
+  (add-to-list 'company-backends 'company-c-headers)
   (autopair-mode)
   (setq c-basic-offset 2)
   (setq auto-mode-alist

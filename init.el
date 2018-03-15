@@ -40,18 +40,8 @@
 
 (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/"))
 
-(defun load-directory (dir)
-  "DIR: Directory to load all el files."
-  (let ((load-it (lambda (f)
-                   (load-file (concat (file-name-as-directory dir) f)))
-		     ))
-    (mapc load-it (directory-files dir nil "\\.el$"))))
-
-(load-directory "~/.emacs.d/packages/")
-
 (defvar required-packages
-  '(
-    elixir-mode
+  '(elixir-mode
     elixir-yasnippets
     alchemist
     powershell
@@ -92,8 +82,44 @@
     badwolf-theme
     highlight-indent-guides
     jquery-doc
-    js2-refactor
-    ))
+    js2-refactor))
+
+(defvar required-packages-core
+  '(
+    magit
+    flycheck
+    flycheck-popup-tip
+    autopair
+    yasnippet
+    yasnippet-snippets
+    popwin
+    pos-tip
+    company
+    company-quickhelp
+    company-tern
+    hideshow-org
+    hideshowvis
+    rainbow-delimiters
+    powerline
+    airline-themes
+    badwolf-theme
+    highlight-indent-guides))
+
+(defvar required-packages-markdown '(markdown-mode))
+
+(defvar required-packages-actionscript '(actionscript-mode))
+
+(defvar required-packages-js '(json-mode js2-refactor js2-mode tern jquery-doc company-tern))
+
+(defvar required-packages-go '(go-mode company-go))
+
+(defvar required-packages-c '(company-c-headers cmake-mode))
+
+(defvar required-packages-python '(jedi-core company-jedi flycheck-pycheckers))
+
+(defvar required-packages-elixir '(elixir-mode elixir-yasnippets alchemist))
+
+(defvar required-packages-lisp '(slime slime-company))
 
 (defun packages-installed-p ()
   "Install package-list if not installed."
@@ -109,7 +135,7 @@
     (when (not (package-installed-p p))
       (package-install p))))
 
-(dolist (p required-packages)
+(dolist (p required-packages-core)
   (require p))
 
 (setq compilation-finish-functions
