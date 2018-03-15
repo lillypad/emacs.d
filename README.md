@@ -11,11 +11,11 @@
 
 # Table of Contents
 - [`Quick Installation`](#quick-installation)
-- [`Manual Installation`](#manual-installation)
 - [`Screenshots`](#screenshots)
 - [`Features`](#features)
 - [`Supported Languages`](#supported-languages)
 - [`Dependencies`](#dependencies)
+- [`Manual Installation`](#manual-installation)
 - [`Keybindings`](#keybindings)
 - [`Feature Requests`](#feature-requests)
 - [`Contributing`](#contributing)
