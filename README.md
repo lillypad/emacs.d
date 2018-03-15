@@ -48,6 +48,7 @@ Once in emacs do: `M-x jedi:install-server RET`.
 
 # Supported Languages:
 - Lisp
+- PHP
 - ActionScript
 - Suricata IDS/IPS
 - Snort IDS/IPS
