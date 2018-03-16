@@ -141,7 +141,7 @@ Add a feature request under issues and I may be able to add it in.
 I will accept pull requests after reviewing them.
 
 # Special Thanks
-- [`oblivia-simplex`](https://github.com/oblivia-simplex)
+- [oblivia-simplex](https://github.com/oblivia-simplex)
   - Converted me from Vim to Emacs
 - [BobuSumisu](sobuSumisu/snort-mode)
   - Creator of `snort-mode` (I've added a few improvements)
