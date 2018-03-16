@@ -15,6 +15,7 @@
 (global-set-key (kbd "C-x g") 'magit-status)
 (global-set-key (kbd "C-M-p") 'package-list-packages)
 (global-set-key (kbd "C-M-x s") 'server-start)
+(global-set-key (kbd "M-x") 'helm-M-x)
 
 (eval-after-load 'company
   '(progn
