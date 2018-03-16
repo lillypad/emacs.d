@@ -18,5 +18,7 @@
 (global-linum-mode t)
 (setq linum-format "%4d \u2502 ")
 (menu-bar-mode -1)
+(projectile-mode t)
+(helm-projectile-on)
 
 ;;; generic.el ends here
