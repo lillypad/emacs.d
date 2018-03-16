@@ -7,6 +7,7 @@
 
 (add-hook 'prog-mode-hook 'rainbow-delimiters-mode)
 (load-theme 'airline-doom-molokai t)
+(setq airline-eshell-colors nil)
 (setq powerline-utf-8-separator-left        #xe0b0
       powerline-utf-8-separator-right       #xe0b2
       airline-utf-glyph-separator-left      #xe0b0

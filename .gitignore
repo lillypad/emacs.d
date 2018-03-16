@@ -3,4 +3,5 @@
 .python-environments/*
 elpa/*
 games/*
+eshell/*
 node_modules/*

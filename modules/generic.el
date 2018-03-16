@@ -18,8 +18,5 @@
 (global-linum-mode t)
 (setq linum-format "%4d \u2502 ")
 (menu-bar-mode -1)
-(push (cons "\\*shell\\*" display-buffer--same-window-action) display-buffer-alist)
-(global-hl-line-mode 1)
-(set-face-attribute hl-line-face nil :underline t)
 
 ;;; generic.el ends here
