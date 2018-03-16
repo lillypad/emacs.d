@@ -13,6 +13,7 @@
 (global-set-key (kbd "M-n") 'yas-next-field-or-maybe-expand)
 (global-set-key (kbd "M-o m") (kbd "RET"))
 (global-set-key (kbd "C-x g") 'magit-status)
+(global-set-key (kbd "C-M-p") 'package-list-packages)
 (global-set-key (kbd "C-M-x s") 'server-start)
 
 (eval-after-load 'company
