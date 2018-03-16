@@ -133,7 +133,7 @@ Once in emacs do: `M-x jedi:install-server RET`.
 - <kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>D</kbd> Git Diff
 - <kbd>TAB</kbd> Completion Cycle Next
 - <kbd>SHIFT</kbd>+<kbd>TAB</kbd> Completion Cycle Previous
-- <kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>X</kbd><kbd>S</kbd> Start Emacs Server
+- <kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>X</kbd> <kbd>S</kbd> Start Emacs Server
 
 # Feature Requests:
 Add a feature request under issues and I may be able to add it in.
