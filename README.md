@@ -48,6 +48,7 @@ Once in emacs do: `M-x jedi:install-server RET`.
 - Git Diff
 - Slime
 - Alchemist
+- Web Mode
 
 # Supported Languages:
 - Lisp

@@ -41,7 +41,8 @@
 (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/"))
 
 (defvar required-packages
-  '(projectile
+  '(web-mode
+    projectile
     helm
     helm-projectile
     eshell
@@ -114,6 +115,8 @@
     airline-themes
     badwolf-theme
     highlight-indent-guides))
+
+(defvar required-packages-web '(web-mode))
 
 (defvar required-packages-clojure '(clojure-mode))
 
