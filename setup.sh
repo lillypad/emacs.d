@@ -22,7 +22,9 @@ elif [[ ! -z $APT_GET_CMD ]]; then
          git \
          python-pip \
          golang-go \
-         elixir
+         elixir \
+         rustc \
+         cargo
 elif [[ ! -z $EMERGE_CMD ]]; then
     sudo emerge --ask app-editors/emacs \
          dev-lang/python \
@@ -30,7 +32,8 @@ elif [[ ! -z $EMERGE_CMD ]]; then
          net-libs/nodejs \
          sys-devel/clang \
          dev-lang/go \
-         dev-lang/elixir
+         dev-lang/elixir \
+         dev-lang/rust
 elif [[ ! -z $PACMAN_CMD ]]; then
     sudo pacman --noconfirm -S emacs \
          python \
@@ -40,11 +43,14 @@ elif [[ ! -z $PACMAN_CMD ]]; then
          git \
          python-pip \
          golang-go \
-         elixir
+         elixir \
+         rustc \
+         cargo
 else
    echo "Unable to Detect Supported Package Manager!"
    exit 1;
 fi
+
 mkdir -p ~/.golang/
 export GOPATH=~/.golang
 echo "GOPATH=~/.golang" >> ~/.bashrc

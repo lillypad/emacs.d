@@ -53,6 +53,7 @@ Once in emacs do: `M-x jedi:install-server RET`.
 # Supported Languages:
 - Lisp
 - Clojure
+- Rust
 - PHP
 - ActionScript
 - Suricata IDS/IPS
@@ -88,7 +89,9 @@ sudo apt-get install -y emacs \
     git \
     python-pip \
     golang-go \
-    elixir
+    elixir \
+    rustc \
+    cargo
 ```
 
 __Gentoo:__
@@ -99,7 +102,8 @@ sudo emerge --ask app-editors/emacs \
     net-libs/nodejs \
     sys-devel/clang \
     dev-lang/go \
-    dev-lang/elixir
+    dev-lang/elixir \
+    dev-lang/rust
 ```
 
 __Setup:__
