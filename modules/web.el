@@ -14,7 +14,8 @@
   "Web Mode Hook."
   (dolist (p required-packages-web)
     (require p))
-  (web-mode))
+  (web-mode)
+  (emmet-mode))
 
 (add-hook 'web-mode 'my/web-mode-hook)
 

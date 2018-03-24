@@ -49,6 +49,8 @@ Once in emacs do: `M-x jedi:install-server RET`.
 - Slime
 - Alchemist
 - Web Mode
+- Tern
+- Emmet
 
 # Supported Languages:
 - Lisp
@@ -68,6 +70,9 @@ Once in emacs do: `M-x jedi:install-server RET`.
 - Javascript
 - JSON
 - Markdown
+- Ruby
+- HTML
+- CSS
 
 # Dependencies
 - [`python`](https://www.python.org/)
@@ -140,6 +145,7 @@ Once in emacs do: `M-x jedi:install-server RET`.
 - <kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>D</kbd> Git Diff
 - <kbd>TAB</kbd> Completion Cycle Next
 - <kbd>SHIFT</kbd>+<kbd>TAB</kbd> Completion Cycle Previous
+- <kbd>CTRL</kbd>+<kbd>J</kbd> Expand Emmet
 - <kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>X</kbd> <kbd>S</kbd> Start Emacs Server
 
 # Feature Requests:

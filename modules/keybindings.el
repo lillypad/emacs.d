@@ -17,6 +17,7 @@
 (global-set-key (kbd "C-M-t") 'eshell)
 (global-set-key (kbd "C-M-x s") 'server-start)
 (global-set-key (kbd "M-x") 'helm-M-x)
+(global-set-key (kbd "C-M-f") 'neotree-toggle)
 
 (eval-after-load 'company
   '(progn

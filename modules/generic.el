@@ -20,5 +20,4 @@
 (menu-bar-mode -1)
 (projectile-mode t)
 (helm-projectile-on)
-
 ;;; generic.el ends here
