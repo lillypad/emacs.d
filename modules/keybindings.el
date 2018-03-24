@@ -5,6 +5,9 @@
 
 ;;; Code:
 
+(when (fboundp 'windmove-default-keybindings)
+  (windmove-default-keybindings))
+
 (global-set-key (kbd "C-M-c") 'comment-region)
 (global-set-key (kbd "C-M-u") 'uncomment-region)
 (global-set-key (kbd "C-M-s") 'ispell)
@@ -18,6 +21,9 @@
 (global-set-key (kbd "C-M-x s") 'server-start)
 (global-set-key (kbd "M-x") 'helm-M-x)
 (global-set-key (kbd "C-M-f") 'neotree-toggle)
+(global-set-key (kbd "C-s") 'helm-swoop)
+(global-set-key (kbd "C-x b") 'helm-buffers-list)
+(global-set-key (kbd "C-x q") 'quit-window)
 
 (eval-after-load 'company
   '(progn
