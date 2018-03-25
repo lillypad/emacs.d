@@ -92,7 +92,6 @@
     rainbow-delimiters
     powerline
     airline-themes
-    badwolf-theme
     highlight-indent-guides
     jquery-doc
     js2-refactor))
@@ -192,30 +191,5 @@
     (load-file (concat (file-name-as-directory dir) f)))
     ))
   (mapc load-it (directory-files dir nil "\\.el$"))))
-(load-directory "~/.emacs.d/modules/")
 
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(custom-safe-themes
-   (quote
-    ("b59d7adea7873d58160d368d42828e7ac670340f11f36f67fa8071dbf957236a" default)))
- '(ediff-split-window-function (quote split-window-horizontally))
- '(package-selected-packages
-   (quote
-    (rainbow-mode molokai-theme ujelly-theme hydra helm-swoop emmet-mode neotree ranger rust-mode projectile helm xterm-color alchemist elixir-mode elixir-yasnippets powershell actionscript-mode yara-mode company-go go-mode slime slime-company magit company-php php-mode autopair yasnippet-snippets flycheck flycheck-popup-tip flycheck-pycheckers popwin popup js2-refactor jquery-doc company tern js2-mode zone-rainbow zone-nyan rainbow-delimiters markdown-mode highlight-indent-guides hideshowvis hideshow-org company-tern company-rtags company-quickhelp company-jedi company-c-headers cmake-mode clojure-mode airline-themes))))
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(rainbow-delimiters-depth-1-face ((t (:foreground "dark orange"))))
- '(rainbow-delimiters-depth-2-face ((t (:foreground "deep pink"))))
- '(rainbow-delimiters-depth-3-face ((t (:foreground "chartreuse"))))
- '(rainbow-delimiters-depth-4-face ((t (:foreground "deep sky blue"))))
- '(rainbow-delimiters-depth-5-face ((t (:foreground "yellow"))))
- '(rainbow-delimiters-depth-6-face ((t (:foreground "orchid"))))
- '(rainbow-delimiters-depth-7-face ((t (:foreground "spring green"))))
- '(rainbow-delimiters-depth-8-face ((t (:foreground "sienna1")))))
+(load-directory "~/.emacs.d/modules/")
