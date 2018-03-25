@@ -14,7 +14,9 @@
   "Web Mode Hook."
   (dolist (p required-packages-web)
     (require p))
+  (setq web-mode-markup-indent-offset 2)
   (web-mode)
+  (rainbow-mode)
   (emmet-mode))
 
 (add-hook 'web-mode 'my/web-mode-hook)
