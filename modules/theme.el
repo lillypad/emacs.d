@@ -7,7 +7,7 @@
 
 (add-hook 'prog-mode-hook 'rainbow-delimiters-mode)
 (load-theme 'airline-serene t)
-(setq airline-eshell-colors nil)
+(setq airline-eshell-colors t)
 (setq powerline-utf-8-separator-left        #xe0b0
       powerline-utf-8-separator-right       #xe0b2
       airline-utf-glyph-separator-left      #xe0b0
@@ -20,11 +20,12 @@
 
 (load-theme 'anarchy t)
 
-
 (global-linum-mode t)
 (set-face-foreground 'linum "#404040")
 (set-face-background 'linum "#000000")
 (setq linum-format "%4d \u2502 ")
+
+(set-face-background 'vertical-border "#404040")
 
 (set-face-attribute 'region nil :background "#666")
 
