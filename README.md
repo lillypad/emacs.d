@@ -159,7 +159,9 @@ I will accept pull requests after reviewing them.
 # Special Thanks
 - [oblivia-simplex](https://github.com/oblivia-simplex)
   - Converted me from Vim to Emacs
-- [BobuSumisu](sobuSumisu/snort-mode)
+- [BobuSumisu](https://github.com/BobuSumisu)
   - Creator of `snort-mode` (I've added a few improvements)
+- [jmdeldin](https://github.com/jmdeldin)
+  - Made port of `ir-black-theme` (Modified to make `anarchy-theme`)
 
 If you like this project buy me a drink :wine_glass:
