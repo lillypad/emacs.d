@@ -6,7 +6,7 @@
 ;;; Code:
 
 (add-hook 'prog-mode-hook 'rainbow-delimiters-mode)
-(load-theme 'airline-doom-molokai t)
+(load-theme 'airline-wombat t)
 (setq airline-eshell-colors nil)
 (setq powerline-utf-8-separator-left        #xe0b0
       powerline-utf-8-separator-right       #xe0b2
@@ -17,7 +17,18 @@
       airline-utf-glyph-branch              #xe0a0
       airline-utf-glyph-readonly            #xe0a2
       airline-utf-glyph-linenumber          #xe0a1)
-(load-theme 'badwolf t)
+
+(load-theme 'ir-black t)
+
+(global-linum-mode t)
+(set-face-foreground 'linum "#404040")
+(set-face-background 'linum "#000000")
+(setq linum-format "%4d \u2502 ")
+
+(set-face-attribute 'region nil :background "#666")
+
+(menu-bar-mode -1)
+
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
