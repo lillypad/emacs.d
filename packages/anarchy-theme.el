@@ -1,16 +1,16 @@
-;;; anarchy.el --- Port of ir-black theme
+;;; anarchy.el --- Modified port of ir-black theme
 
 ;;; Commentary:
-;; Patched version of: `https://github.com/jmdeldin/ir-black-theme.el'.
+;; Modified version of: `https://github.com/jmdeldin/ir-black-theme.el'.
 
 ;;; Code:
 
-(deftheme anarchy "Port of ir-black theme")
+(deftheme anarchy "Modified port of ir-black-theme")
 
 (let ((*background-color*   "#000000")
       (*brown*              "#E64")
       (*comments*           "#7C7C7C")
-      (*constant*           "#99CC99")
+      (*constant*           "#FFAFFF")
       (*current-line*       "#151515")
       (*cursor-underscore*  "#FFFAAA")
       (*keywords*           "#FF0000")
