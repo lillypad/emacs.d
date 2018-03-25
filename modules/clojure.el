@@ -8,7 +8,7 @@
 (defun my/clojure-mode-hook ()
   (dolist (p required-packages-clojure)
     (require p))
-  (autopair-mode)
+  (paredit-mode)
   (rainbow-delimiters-mode))
 
 (add-hook 'clojure-mode-hook 'my/clojure-mode-hook)

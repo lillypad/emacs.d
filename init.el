@@ -41,7 +41,8 @@
 (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/"))
 
 (defvar required-packages
-  '(rainbow-mode
+  '(paredit
+    rainbow-mode
     hydra
     helm-swoop
     emmet-mode
@@ -125,13 +126,15 @@
     airline-themes
     highlight-indent-guides))
 
+(defvar required-packages-elisp '(paredit))
+
 (defvar required-packages-ruby '(ruby-mode))
 
 (defvar required-packages-rust '(rust-mode))
 
 (defvar required-packages-web '(web-mode emmet-mode))
 
-(defvar required-packages-clojure '(clojure-mode))
+(defvar required-packages-clojure '(clojure-mode paredit))
 
 (defvar required-packages-php '(php-mode company-php))
 
@@ -153,7 +156,7 @@
 
 (defvar required-packages-elixir '(elixir-mode elixir-yasnippets alchemist))
 
-(defvar required-packages-lisp '(slime slime-company))
+(defvar required-packages-lisp '(slime slime-company paredit))
 
 (defun packages-installed-p ()
   "Install package-list if not installed."
@@ -193,3 +196,25 @@
   (mapc load-it (directory-files dir nil "\\.el$"))))
 
 (load-directory "~/.emacs.d/modules/")
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(ediff-split-window-function (quote split-window-horizontally))
+ '(package-selected-packages
+   (quote
+    (monochrome-theme paredit zone-nyan yasnippet-snippets yara-mode xterm-color web-mode ujelly-theme slime-company rust-mode ranger rainbow-mode rainbow-delimiters powershell popwin neotree molokai-theme markdown-mode magit json-mode js2-refactor jquery-doc hydra highlight-indent-guides hideshowvis hideshow-org helm-swoop helm-projectile flycheck-pycheckers flycheck-popup-tip emmet-mode elixir-yasnippets company-tern company-quickhelp company-php company-jedi company-go company-c-headers cmake-mode clojure-mode autopair alchemist airline-themes actionscript-mode))))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(rainbow-delimiters-depth-1-face ((t (:foreground "dark orange"))))
+ '(rainbow-delimiters-depth-2-face ((t (:foreground "deep pink"))))
+ '(rainbow-delimiters-depth-3-face ((t (:foreground "chartreuse"))))
+ '(rainbow-delimiters-depth-4-face ((t (:foreground "deep sky blue"))))
+ '(rainbow-delimiters-depth-5-face ((t (:foreground "yellow"))))
+ '(rainbow-delimiters-depth-6-face ((t (:foreground "orchid"))))
+ '(rainbow-delimiters-depth-7-face ((t (:foreground "spring green"))))
+ '(rainbow-delimiters-depth-8-face ((t (:foreground "sienna1")))))

@@ -14,7 +14,7 @@
 (setq auto-save-file-name-transforms
     `((".*" ,emacs-tmp-dir t)))
 (setq auto-save-list-file-prefix
-    emacs-tmp-dir)
+      emacs-tmp-dir)
 (projectile-mode t)
 (helm-projectile-on)
 ;;; generic.el ends here

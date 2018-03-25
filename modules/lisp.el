@@ -17,7 +17,7 @@
   ;(add-to-list 'company-backends 'slime-company)
   (setq slime-contribs '(slime-fancy))
   ;(slime-setup '(slime-fancy slime-company))
-  (autopair-mode))
+  (paredit-mode))
 
 (add-hook 'lisp-mode-hook 'my/lisp-mode-hook)
 

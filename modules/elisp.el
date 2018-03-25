@@ -7,7 +7,9 @@
 
 (defun my/emacs-lisp-mode-hook ()
   "ELisp Mode Hook."
-  (autopair-mode))
+  (dolist (p required-packages-elisp)
+    (require p))
+  (paredit-mode))
 
 (add-hook 'emacs-lisp-mode-hook 'my/emacs-lisp-mode-hook)
 
