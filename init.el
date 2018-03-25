@@ -42,7 +42,6 @@
 
 (defvar required-packages
   '(rainbow-mode
-    ir-black-theme
     hydra
     helm-swoop
     emmet-mode
@@ -100,7 +99,6 @@
 
 (defvar required-packages-core
   '(rainbow-mode
-    ir-black-theme
     hydra
     helm-swoop
     neotree
@@ -175,6 +173,7 @@
 (dolist (p required-packages-core)
   (require p))
 
+(load "~/.emacs.d/packages/anarchy-theme.el")
 (load "~/.emacs.d/packages/hydra-helm.el")
 
 (setq compilation-finish-functions
@@ -206,7 +205,7 @@
  '(ediff-split-window-function (quote split-window-horizontally))
  '(package-selected-packages
    (quote
-    (rainbow-mode ir-black-theme molokai-theme ujelly-theme hydra helm-swoop emmet-mode neotree ranger rust-mode projectile helm xterm-color alchemist elixir-mode elixir-yasnippets powershell actionscript-mode yara-mode company-go go-mode slime slime-company magit company-php php-mode autopair yasnippet-snippets flycheck flycheck-popup-tip flycheck-pycheckers popwin popup js2-refactor jquery-doc company tern js2-mode zone-rainbow zone-nyan rainbow-delimiters markdown-mode highlight-indent-guides hideshowvis hideshow-org company-tern company-rtags company-quickhelp company-jedi company-c-headers cmake-mode clojure-mode airline-themes))))
+    (rainbow-mode molokai-theme ujelly-theme hydra helm-swoop emmet-mode neotree ranger rust-mode projectile helm xterm-color alchemist elixir-mode elixir-yasnippets powershell actionscript-mode yara-mode company-go go-mode slime slime-company magit company-php php-mode autopair yasnippet-snippets flycheck flycheck-popup-tip flycheck-pycheckers popwin popup js2-refactor jquery-doc company tern js2-mode zone-rainbow zone-nyan rainbow-delimiters markdown-mode highlight-indent-guides hideshowvis hideshow-org company-tern company-rtags company-quickhelp company-jedi company-c-headers cmake-mode clojure-mode airline-themes))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

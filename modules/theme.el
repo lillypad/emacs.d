@@ -18,7 +18,8 @@
       airline-utf-glyph-readonly            #xe0a2
       airline-utf-glyph-linenumber          #xe0a1)
 
-(load-theme 'ir-black t)
+(load-theme 'anarchy t)
+
 
 (global-linum-mode t)
 (set-face-foreground 'linum "#404040")
