@@ -15,6 +15,7 @@
     `((".*" ,emacs-tmp-dir t)))
 (setq auto-save-list-file-prefix
       emacs-tmp-dir)
+(ivy-mode)
 (projectile-mode t)
 (helm-projectile-on)
 ;;; generic.el ends here
