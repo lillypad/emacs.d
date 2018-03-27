@@ -99,7 +99,8 @@
     js2-refactor))
 
 (defvar required-packages-core
-  '(ivy
+  '(ace-jump-mode
+    ivy
     rainbow-mode
     hydra
     helm-swoop
@@ -206,7 +207,7 @@
  '(ediff-split-window-function (quote split-window-horizontally))
  '(package-selected-packages
    (quote
-    (ivy monochrome-theme paredit zone-nyan yasnippet-snippets yara-mode xterm-color web-mode ujelly-theme slime-company rust-mode ranger rainbow-mode rainbow-delimiters powershell popwin neotree molokai-theme markdown-mode magit json-mode js2-refactor jquery-doc hydra highlight-indent-guides hideshowvis hideshow-org helm-swoop helm-projectile flycheck-pycheckers flycheck-popup-tip emmet-mode elixir-yasnippets company-tern company-quickhelp company-php company-jedi company-go company-c-headers cmake-mode clojure-mode autopair alchemist airline-themes actionscript-mode))))
+    (ace-jump-mode ivy monochrome-theme paredit zone-nyan yasnippet-snippets yara-mode xterm-color web-mode ujelly-theme slime-company rust-mode ranger rainbow-mode rainbow-delimiters powershell popwin neotree molokai-theme markdown-mode magit json-mode js2-refactor jquery-doc hydra highlight-indent-guides hideshowvis hideshow-org helm-swoop helm-projectile flycheck-pycheckers flycheck-popup-tip emmet-mode elixir-yasnippets company-tern company-quickhelp company-php company-jedi company-go company-c-headers cmake-mode clojure-mode autopair alchemist airline-themes actionscript-mode))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
