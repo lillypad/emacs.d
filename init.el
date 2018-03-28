@@ -129,6 +129,14 @@
     airline-themes
     highlight-indent-guides))
 
+;; Disable Useless Features
+(if (display-graphic-p)
+    (progn
+      (menu-bar-mode -1)
+      (tool-bar-mode -1)
+      (scroll-bar-mode -1))
+  (menu-bar-mode -1))
+
 (defvar required-packages-elisp '(paredit))
 
 (defvar required-packages-ruby '(ruby-mode))
@@ -199,6 +207,9 @@
   (mapc load-it (directory-files dir nil "\\.el$"))))
 
 (load-directory "~/.emacs.d/modules/")
+
+(my/theme-setup)
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

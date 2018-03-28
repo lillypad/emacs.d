@@ -15,6 +15,7 @@
 (global-set-key (kbd "M-j") 'yas-expand)
 (global-set-key (kbd "M-n") 'yas-next-field-or-maybe-expand)
 (global-set-key (kbd "M-o m") (kbd "RET"))
+(global-set-key (kbd "M-O n") (kbd "."))
 (global-set-key (kbd "C-x g") 'magit-status)
 (global-set-key (kbd "C-x p") 'package-list-packages)
 (global-set-key (kbd "C-x t") 'eshell)
@@ -32,8 +33,8 @@
 
 (defhydra hydra-navigator (global-map "C-c n")
   "Hydra Page Navigation"
-  ("d" scroll-up "Page Down")
-  ("u" scroll-down "Page Up")
+  ("d" cua-scroll-up "Page Down")
+  ("u" cua-scroll-down "Page Up")
   ("n" forward-line "Line Down")
   ("p" ibuffer-backward-line "Line Up")
   ("f" forward-char "Char Forward")
