@@ -8,6 +8,7 @@ all: build
 test: clean build
 
 build:
+	pip install --user -r requirements.txt
 	emacs --batch -l init.el
 	emacs --batch -l init.el --eval '(jedi:install-server)'
 
