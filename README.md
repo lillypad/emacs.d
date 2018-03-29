@@ -31,8 +31,6 @@ Run this one command and you are done! :stuck_out_tongue_winking_eye:
 curl -s https://raw.githubusercontent.com/lillypad/emacs.d/master/setup.sh | bash
 ```
 
-Once in emacs do: `M-x jedi:install-server RET`.
-
 # Screenshots
 ![Screenshot](img/emacs-lillypad.png)
 
@@ -128,6 +126,7 @@ git clone https://github.com/lillypad/emacs.d.git ~/.emacs.d/
 cd ~/.emacs.d/
 sudo pip install -r requirements.txt
 cp .tern-config ~/.tern-config
+make
 cd ~
 emacs
 ```

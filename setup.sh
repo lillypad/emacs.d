@@ -62,5 +62,6 @@ git clone https://github.com/lillypad/emacs.d.git ~/.emacs.d/
 cd .emacs.d/
 pip install --user -r requirements.txt
 cp .tern-config ~/.tern-config
+make
 cd ~
 emacs
