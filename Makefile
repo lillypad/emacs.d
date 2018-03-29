@@ -4,6 +4,9 @@ emacs ?= emacs
 .PHONY: ubuntu
 .PHONY: arch
 .PHONY: test
+.PHONY: all
+
+all: build
 
 gentoo: deps_gentoo build
 
@@ -24,6 +27,8 @@ deps_gentoo:
 		dev-lang/elixir \
 		dev-lang/rust
 	pip install --user -r requirements.txt
+	sudo npm install -g csslint jshint tern
+	sudo ln -sf /usr/bin/nodejs /usr/bin/node
 
 deps_ubuntu:
 	sudo add-apt-repository ppa:ubuntu-elisp/ppa
