@@ -54,6 +54,7 @@ Once in emacs do: `M-x jedi:install-server RET`.
 - NeoTree
 - Paredit
 - Ivy
+- Ace Jump
 
 # Supported Languages:
 - Lisp
