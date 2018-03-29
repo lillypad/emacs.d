@@ -41,7 +41,8 @@
 (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/"))
 
 (defvar required-packages
-  '(ivy
+  '(ace-jump-mode
+    ivy
     paredit
     rainbow-mode
     hydra
@@ -89,8 +90,6 @@
     clojure-mode
     cmake-mode
     jedi-core
-    hideshow-org
-    hideshowvis
     rainbow-delimiters
     powerline
     airline-themes
@@ -122,20 +121,10 @@
     company
     company-quickhelp
     company-tern
-    hideshow-org
-    hideshowvis
     rainbow-delimiters
     powerline
     airline-themes
     highlight-indent-guides))
-
-;; Disable Useless Features
-(if (display-graphic-p)
-    (progn
-      (menu-bar-mode -1)
-      (tool-bar-mode -1)
-      (scroll-bar-mode -1))
-  (menu-bar-mode -1))
 
 (defvar required-packages-elisp '(paredit))
 
@@ -218,7 +207,7 @@
  '(ediff-split-window-function (quote split-window-horizontally))
  '(package-selected-packages
    (quote
-    (ace-jump-mode ivy monochrome-theme paredit zone-nyan yasnippet-snippets yara-mode xterm-color web-mode ujelly-theme slime-company rust-mode ranger rainbow-mode rainbow-delimiters powershell popwin neotree molokai-theme markdown-mode magit json-mode js2-refactor jquery-doc hydra highlight-indent-guides hideshowvis hideshow-org helm-swoop helm-projectile flycheck-pycheckers flycheck-popup-tip emmet-mode elixir-yasnippets company-tern company-quickhelp company-php company-jedi company-go company-c-headers cmake-mode clojure-mode autopair alchemist airline-themes actionscript-mode))))
+    (js2-refactor jquery-doc highlight-indent-guides airline-themes powerline rainbow-delimiters cmake-mode clojure-mode company-php company-c-headers company-jedi company-tern company-quickhelp json-mode pos-tip popwin yasnippet-snippets tern js2-mode autopair markdown-mode flycheck-popup-tip flycheck-pycheckers flycheck php-mode magit slime-company slime company-go go-mode yara-mode actionscript-mode powershell alchemist elixir-yasnippets elixir-mode xterm-color helm-projectile projectile web-mode rust-mode neotree emmet-mode helm-swoop hydra rainbow-mode paredit ivy))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
