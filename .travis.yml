@@ -1,7 +1,7 @@
 language: emacs-lisp
 env:
   matrix:
-    - emacs=emacs24
+    - emacs=emacs25
     - emacs=emacs-snapshot
 
 before_install:
