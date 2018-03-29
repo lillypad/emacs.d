@@ -1,4 +1,3 @@
-emacs ?= emacs
 language: emacs-lisp
 env:
   matrix:
