@@ -1,3 +1,5 @@
+emacs ?= emacs
+
 .PHONY: all
 .PHONY: test
 
