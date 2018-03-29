@@ -178,6 +178,9 @@
 (dolist (p required-packages-core)
   (require p))
 
+(add-to-list 'load-path (expand-file-name "~/.emacs.d/modules"))
+(add-to-list 'load-path (expand-file-name "~/.emacs.d/packages"))
+
 (load "~/.emacs.d/packages/anarchy-theme.el")
 (load "~/.emacs.d/packages/hydra-helm.el")
 
