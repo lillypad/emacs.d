@@ -88,47 +88,26 @@ curl -s https://raw.githubusercontent.com/lillypad/emacs.d/master/setup.sh | bas
 
 __Ubuntu / Debian__
 ```bash
-sudo apt-get install -y emacs \
-    python \
-    npm \
-    nodejs \
-    clang \
-    git \
-    python-pip \
-    golang-go \
-    elixir \
-    rustc \
-    cargo
+git clone https://github.com/lillypad/emacs.d.git
+cd ~/.emacs.d
+make ubuntu
 ```
 
 __Gentoo:__
 ```bash
-sudo emerge --ask app-editors/emacs \
-    dev-lang/python \
-    dev-python/pip \
-    net-libs/nodejs \
-    sys-devel/clang \
-    dev-lang/go \
-    dev-lang/elixir \
-    dev-lang/rust
+git clone https://github.com/lillypad/emacs.d.git
+cd ~/.emacs.d
+make gentoo
 ```
 
 __Setup:__
 ```bash
-mkdir -p ~/.golang/
-export GOPATH=~/.golang
-echo "GOPATH=~/.golang" >> ~/.bashrc
-go get -u github.com/nsf/gocode
-sudo cp ~/.golang/bin/gocode /usr/bin/gocode
-sudo ln -sf /usr/bin/nodejs /usr/bin/node
-sudo npm install -g csslint jshint tern
-git clone https://github.com/lillypad/emacs.d.git ~/.emacs.d/
-cd ~/.emacs.d/
-sudo pip install -r requirements.txt
-cp .tern-config ~/.tern-config
-make
-cd ~
-emacs
+make install
+```
+
+__Testing:__
+```bash
+make test
 ```
 
 Once in emacs do: `M-x jedi:install-server RET`.
@@ -137,14 +116,14 @@ Once in emacs do: `M-x jedi:install-server RET`.
 - <kbd>CTRL</kbd>+<kbd>C</kbd> Copy
 - <kbd>CTRL</kbd>+<kbd>X</kbd> Cut
 - <kbd>CTRL</kbd>+<kbd>V</kbd> Paste
-- <kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>C</kbd> Comment Region
-- <kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>U</kbd> Uncomment Region
+- <kbd>ALT</kbd>+<kbd>C</kbd> Comment Region
+- <kbd>ALT</kbd>+<kbd>U</kbd> Uncomment Region
 - <kbd>ALT</kbd>+<kbd>J</kbd> Expand Snippet
 - <kbd>ALT</kbd>+<kbd>N</kbd> Next Snippet
 - <kbd>CTRL</kbd>+<kbd>X</kbd> <kbd>G</kbd> Open Magit
-- <kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>P</kbd> Open Package Manager
-- <kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>T</kbd> Open EShell
-- <kbd>CTRL></kbd>+<kbd>ALT</kbd>+<kbd>F</kbd> Open/Close NeoTree
+- <kbd>CTRL</kbd>+<kbd>X</kbd> <kbd>P</kbd> Open Package Manager
+- <kbd>CTRL</kbd>+<kbd>X</kbd> <kbd>T</kbd> Open EShell
+- <kbd>CTRL></kbd>+<kbd>X</kbd> <kbd>F</kbd> Open/Close NeoTree
 - <kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>S</kbd> Spell Checking
 - <kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>D</kbd> Git Diff
 - <kbd>TAB</kbd> Completion Cycle Next
@@ -165,5 +144,7 @@ I will accept pull requests after reviewing them.
   - Creator of `snort-mode` (I've added a few improvements)
 - [jmdeldin](https://github.com/jmdeldin)
   - Made port of `ir-black-theme` (Modified to make `anarchy-theme`)
+
+:notebook_with_decorative_cover:: Travis CI Support is on the way though Ubuntu 14.04 vagrant runners are out of date for this config so will have to migrate to docker
 
 If you like this project buy me a drink :wine_glass:
