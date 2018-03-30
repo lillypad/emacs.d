@@ -59,10 +59,10 @@ deps_arch:
 		clang \
 		git \
 		python-pip \
-		golang-go \
+		go \
 		elixir \
-		rustc \
-		cargo
+		rust \
+		clisp
 	sudo pip install -r requirements.txt
 	sudo npm install -g csslint jshint tern
 
