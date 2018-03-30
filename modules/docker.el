@@ -8,7 +8,8 @@
 (defun my/dockerfile-mode-hook ()
   "Dockerfile Mode Hook."
   (dolist (p required-packages-docker)
-    (require p)))
+    (require p))
+  (setq indent-tabs-mode t))
 
 (add-hook 'dockerfile-mode-hook 'my/dockerfile-mode-hook)
 
