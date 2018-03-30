@@ -1,7 +1,7 @@
 FROM ubuntu:17.10
 
 RUN apt-get update -qq
-RUN apt-get install -qq git make sudo
+RUN apt-get install -qq git make sudo software-properties-common
 RUN echo "dockerci ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers
 RUN useradd -ms /bin/bash dockerci
 RUN echo "dockerci:dockerci" | chpasswd
