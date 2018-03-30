@@ -7,3 +7,4 @@ services:
 
 script:
   - docker build -f docker/ubuntu/Dockerfile .
+  - docker build -f docker/arch/Dockerfile .
