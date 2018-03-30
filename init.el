@@ -38,7 +38,16 @@
 
 (package-initialize)
 
-(add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/"))
+(cond
+ ((string-equal system-type "windows-nt")
+  (progn
+    (add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/"))))
+ ((string-equal system-type "darwin")
+  (progn
+    (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/"))))
+ ((string-equal system-type "gnu/linux")
+  (progn
+    (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/")))))
 
 (defvar required-packages
   '(dockerfile-mode

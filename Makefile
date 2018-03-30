@@ -3,6 +3,7 @@ emacs ?= emacs
 .PHONY: gentoo
 .PHONY: ubuntu
 .PHONY: arch
+.PHONY: windows
 .PHONY: test
 .PHONY: all
 
@@ -13,6 +14,8 @@ gentoo: deps_gentoo build
 ubuntu: deps_ubuntu build
 
 arch: deps_arch build
+
+windows: deps_windows build
 
 test: clean build
 
@@ -62,6 +65,18 @@ deps_arch:
 		cargo
 	sudo pip install -r requirements.txt
 	sudo npm install -g csslint jshint tern
+
+deps_windows:
+	choco install -y git \
+		emacs \
+		python \
+		nodejs \
+		golang \
+		clisp \
+		rust \
+		elixir
+	pip install -r requirements.txt
+	npm install -g csslint jshint tern
 
 build:
 	emacs --batch -l init.el
