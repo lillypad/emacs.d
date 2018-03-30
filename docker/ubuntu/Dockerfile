@@ -9,7 +9,7 @@ RUN apt-get update -qq && \
 USER dockerci
 WORKDIR /home/dockerci/
 RUN mkdir -p .emacs.d
-ADD ../../ .emacs.d/
+ADD . .emacs.d/
 USER root
 RUN chown -R dockerci:dockerci .emacs.d/
 USER dockerci
