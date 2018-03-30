@@ -21,6 +21,15 @@ test: clean build
 
 deps_gentoo:
 	sudo emerge --quiet --sync
+	sudo emerge --quiet --autounmask-write app-editors/emacs \
+		dev-lang/python \
+		dev-python/pip \
+		net-libs/nodejs \
+		sys-devel/clang \
+		dev-lang/go \
+		dev-lang/elixir \
+		dev-lang/rust \
+		dev-lisp/clisp
 	sudo emerge --quiet app-editors/emacs \
 		dev-lang/python \
 		dev-python/pip \

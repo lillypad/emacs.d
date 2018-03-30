@@ -5,7 +5,16 @@ language: emacs-lisp
 services:
   - docker
 
-script:
-  - docker build -f docker/ubuntu/Dockerfile .
-  - docker build -f docker/arch/Dockerfile .
-  - docker build -f docker/gentoo/Dockerfile .
+stages:
+  - ubuntu
+  - arch
+  - gentoo
+
+jobs:
+  include:
+    - stage: ubuntu
+      script: docker build -f docker/ubuntu/Dockerfile .
+    - stage: arch
+      script: docker build -f docker/arch/Dockerfile .
+    - stage: gentoo
+      script: docker build -f docker/gentoo/Dockerfile .
