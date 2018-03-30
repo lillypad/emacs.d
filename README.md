@@ -1,4 +1,3 @@
-
 [![Build Status](https://travis-ci.org/lillypad/emacs.d.svg?branch=master)](https://travis-ci.org/lillypad/emacs.d)
 [![GitHub license](https://img.shields.io/github/license/lillypad/emacs-lillypad.svg)](https://github.com/lillypad/emacs-lillypad/blob/master/LICENSE)
 [![Python 2](https://img.shields.io/badge/Python-2-brightgreen.svg)](https://github.com/lillypad/emacs-lillypad/)
@@ -23,11 +22,9 @@
 - [`Contributing`](#contributing)
 - [`Special Thanks`](#special-thanks)
 
-
 # Quick Installation
 
 Run this one command and you are done! :stuck_out_tongue_winking_eye:
-
 
 ```bash
 curl -s https://raw.githubusercontent.com/lillypad/emacs.d/master/setup.sh | bash
@@ -77,6 +74,7 @@ curl -s https://raw.githubusercontent.com/lillypad/emacs.d/master/setup.sh | bas
 - Ruby
 - HTML
 - CSS
+- Dockerfile
 
 # Dependencies
 - [`python`](https://www.python.org/)
@@ -112,8 +110,6 @@ __Testing:__
 make test
 ```
 
-Once in emacs do: `M-x jedi:install-server RET`.
-
 # Keybindings
 - <kbd>CTRL</kbd>+<kbd>C</kbd> Copy
 - <kbd>CTRL</kbd>+<kbd>X</kbd> Cut
@@ -146,7 +142,5 @@ I will accept pull requests after reviewing them.
   - Creator of `snort-mode` (I've added a few improvements)
 - [jmdeldin](https://github.com/jmdeldin)
   - Made port of `ir-black-theme` (Modified to make `anarchy-theme`)
-
-:notebook_with_decorative_cover:: Travis CI Support is on the way though Ubuntu 14.04 vagrant runners are out of date for this config so will have to migrate to docker
 
 If you like this project buy me a drink :wine_glass:
