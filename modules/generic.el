@@ -6,6 +6,7 @@
 ;;; Code:
 
 (xterm-mouse-mode)
+(setq ring-bell-function 'ignore)
 (setq-default tab-width 4)
 (setq-default indent-tabs-mode nil)
 (defconst emacs-tmp-dir (expand-file-name (format "emacs%d" (user-uid)) temporary-file-directory))
