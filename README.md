@@ -30,6 +30,12 @@ Run this one command and you are done! :stuck_out_tongue_winking_eye:
 curl -s https://raw.githubusercontent.com/lillypad/emacs.d/master/setup.sh | bash
 ```
 
+If you are using `WinBlows` you have to use the `ps1` script instead:
+
+```powershell
+Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/lillypad/emacs.d/master/setup.ps1'))
+```
+
 # Screenshots
 ![Screenshot](img/emacs-lillypad.png)
 
