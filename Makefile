@@ -20,15 +20,16 @@ windows: deps_windows build
 test: clean build
 
 deps_gentoo:
-	sudo emerge --sync
-	sudo emerge --ask app-editors/emacs \
+	sudo emerge --quiet --sync
+	sudo emerge --quiet app-editors/emacs \
 		dev-lang/python \
 		dev-python/pip \
 		net-libs/nodejs \
 		sys-devel/clang \
 		dev-lang/go \
 		dev-lang/elixir \
-		dev-lang/rust
+		dev-lang/rust \
+		dev-lisp/clisp
 	pip install --user -r requirements.txt
 	sudo npm install -g csslint jshint tern
 
