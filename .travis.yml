@@ -1,13 +1,9 @@
-language: emacs-lisp
-env:
-  matrix:
-    - emacs=emacs25
+sudo: required
 
-before_install:
-  - sudo add-apt-repository -y ppa:kelleyk/emacs
-  - sudo apt-get update -qq
-  - sudo apt-get install -qq emacs25 python git python-pip python-virtualenv
-  - sudo pip install -r requirements.txt
+language: emacs-lisp
+
+services:
+  - docker
 
 script:
-- make test
+  - docker build -t emacsd .
