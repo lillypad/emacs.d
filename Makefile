@@ -1,5 +1,8 @@
 emacs ?= emacs
 
+PORTAGE_UNMASK=/etc/portage/package.unmask
+PORTAGE_ACCEPT=/etc/portage/package.accept
+
 .PHONY: gentoo
 .PHONY: ubuntu
 .PHONY: arch
@@ -21,15 +24,17 @@ test: clean build
 
 deps_gentoo:
 	sudo emerge --quiet --sync
-	sudo emerge --quiet --autounmask-write app-editors/emacs \
-		dev-lang/python \
-		dev-python/pip \
-		net-libs/nodejs \
-		sys-devel/clang \
-		dev-lang/go \
-		dev-lang/elixir \
-		dev-lang/rust \
-		dev-lisp/clisp
+	echo "app-editors/emacs" | tee -a ${PORTAGE_UNMASK} ${PORTAGE_ACCEPT}
+	echo "dev-lang/python" | tee -a ${PORTAGE_UNMASK} ${PORTAGE_ACCEPT}
+	echo "dev-python/pip" | tee -a ${PORTAGE_UNMASK} ${PORTAGE_ACCEPT}
+	echo "net-libs/nodejs" | tee -a ${PORTAGE_UNMASK} ${PORTAGE_ACCEPT}
+	echo "sys-devel/clang" | tee -a ${PORTAGE_UNMASK} ${PORTAGE_ACCEPT}
+	echo "dev-lang/go" | tee -a ${PORTAGE_UNMASK} ${PORTAGE_ACCEPT}
+	echo "dev-lang/elixir" | tee -a ${PORTAGE_UNMASK} ${PORTAGE_ACCEPT}
+	echo "dev-lang/rust" | tee -a ${PORTAGE_UNMASK} ${PORTAGE_ACCEPT}
+	echo "dev-lisp/clisp" | tee -a ${PORTAGE_UNMASK} ${PORTAGE_ACCEPT}
+	echo "dev-util/cargo" | tee -a ${PORTAGE_UNMASK} ${PORTAGE_ACCEPT}
+	echo "virtual/rust" | tee -a ${PORTAGE_UNMASK} ${PORTAGE_ACCEPT}
 	sudo emerge --quiet app-editors/emacs \
 		dev-lang/python \
 		dev-python/pip \

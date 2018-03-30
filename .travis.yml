@@ -14,7 +14,9 @@ jobs:
   include:
     - stage: ubuntu
       script: docker build -f docker/ubuntu/Dockerfile .
+  include:
     - stage: arch
       script: docker build -f docker/arch/Dockerfile .
+  include:
     - stage: gentoo
       script: docker build -f docker/gentoo/Dockerfile .
