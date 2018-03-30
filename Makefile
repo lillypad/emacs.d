@@ -28,12 +28,11 @@ deps_gentoo:
 		dev-lang/rust
 	pip install --user -r requirements.txt
 	sudo npm install -g csslint jshint tern
-	sudo ln -sf /usr/bin/nodejs /usr/bin/node
 
 deps_ubuntu:
 	sudo add-apt-repository ppa:ubuntu-elisp/ppa
 	sudo apt-get update
-	sudo apt-get install -y emacs-snapshot \
+	sudo apt-get install -qq emacs-snapshot \
 		python \
 		python-virtualenv \
 		npm \
@@ -48,10 +47,9 @@ deps_ubuntu:
 	rm -f erlang-solutions_1.0_all.deb
 	sudo pip install -r requirements.txt
 	sudo npm install -g csslint jshint tern
-	sudo ln -sf /usr/bin/nodejs /usr/bin/node
 
 deps_arch:
-	sudo pacman --noconrim -S emacs \
+	sudo pacman --noconfirm -S emacs \
 		python \
 		npm \
 		nodejs \
@@ -64,7 +62,6 @@ deps_arch:
 		cargo
 	sudo pip install -r requirements.txt
 	sudo npm install -g csslint jshint tern
-	sudo ln -sf /usr/bin/nodejs /usr/bin/node
 
 build:
 	emacs --batch -l init.el
