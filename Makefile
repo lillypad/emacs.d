@@ -1,7 +1,7 @@
 emacs ?= emacs
 
 PORTAGE_UNMASK=/etc/portage/package.unmask
-PORTAGE_ACCEPT=/etc/portage/package.accept
+PORTAGE_ACCEPT=/etc/portage/package.accept_keywords
 
 .PHONY: gentoo
 .PHONY: ubuntu
