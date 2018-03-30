@@ -6,4 +6,4 @@ services:
   - docker
 
 script:
-  - docker build -t emacsd docker/ubuntu/Dockerfile
+  - docker build -t emacsd docker/ubuntu/
