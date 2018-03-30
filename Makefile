@@ -24,17 +24,17 @@ test: clean build
 
 deps_gentoo:
 	sudo emerge --quiet --sync
-	echo "app-editors/emacs" | tee -a ${PORTAGE_UNMASK} ${PORTAGE_ACCEPT}
-	echo "dev-lang/python" | tee -a ${PORTAGE_UNMASK} ${PORTAGE_ACCEPT}
-	echo "dev-python/pip" | tee -a ${PORTAGE_UNMASK} ${PORTAGE_ACCEPT}
-	echo "net-libs/nodejs" | tee -a ${PORTAGE_UNMASK} ${PORTAGE_ACCEPT}
-	echo "sys-devel/clang" | tee -a ${PORTAGE_UNMASK} ${PORTAGE_ACCEPT}
-	echo "dev-lang/go" | tee -a ${PORTAGE_UNMASK} ${PORTAGE_ACCEPT}
-	echo "dev-lang/elixir" | tee -a ${PORTAGE_UNMASK} ${PORTAGE_ACCEPT}
-	echo "dev-lang/rust" | tee -a ${PORTAGE_UNMASK} ${PORTAGE_ACCEPT}
-	echo "dev-lisp/clisp" | tee -a ${PORTAGE_UNMASK} ${PORTAGE_ACCEPT}
-	echo "dev-util/cargo" | tee -a ${PORTAGE_UNMASK} ${PORTAGE_ACCEPT}
-	echo "virtual/rust" | tee -a ${PORTAGE_UNMASK} ${PORTAGE_ACCEPT}
+	echo "app-editors/emacs" | sudo tee -a ${PORTAGE_UNMASK} ${PORTAGE_ACCEPT}
+	echo "dev-lang/python" | sudo tee -a ${PORTAGE_UNMASK} ${PORTAGE_ACCEPT}
+	echo "dev-python/pip" | sudo tee -a ${PORTAGE_UNMASK} ${PORTAGE_ACCEPT}
+	echo "net-libs/nodejs" | sudo tee -a ${PORTAGE_UNMASK} ${PORTAGE_ACCEPT}
+	echo "sys-devel/clang" | sudo tee -a ${PORTAGE_UNMASK} ${PORTAGE_ACCEPT}
+	echo "dev-lang/go" | sudo tee -a ${PORTAGE_UNMASK} ${PORTAGE_ACCEPT}
+	echo "dev-lang/elixir" | sudo tee -a ${PORTAGE_UNMASK} ${PORTAGE_ACCEPT}
+	echo "dev-lang/rust" | sudo tee -a ${PORTAGE_UNMASK} ${PORTAGE_ACCEPT}
+	echo "dev-lisp/clisp" | sudo tee -a ${PORTAGE_UNMASK} ${PORTAGE_ACCEPT}
+	echo "dev-util/cargo" | sudo tee -a ${PORTAGE_UNMASK} ${PORTAGE_ACCEPT}
+	echo "virtual/rust" | sudo tee -a ${PORTAGE_UNMASK} ${PORTAGE_ACCEPT}
 	sudo emerge --quiet app-editors/emacs \
 		dev-lang/python \
 		dev-python/pip \

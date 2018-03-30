@@ -1,7 +1,5 @@
 sudo: required
 
-language: emacs-lisp
-
 services:
   - docker
 
@@ -13,10 +11,11 @@ stages:
 jobs:
   include:
     - stage: ubuntu
+      language: emacs-lisp
       script: docker build -f docker/ubuntu/Dockerfile .
-  include:
     - stage: arch
+      language: emacs-lisp
       script: docker build -f docker/arch/Dockerfile .
-  include:
     - stage: gentoo
+      language: emacs-lisp
       script: docker build -f docker/gentoo/Dockerfile .
