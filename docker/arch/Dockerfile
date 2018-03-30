@@ -2,6 +2,7 @@ FROM base/archlinux:latest
 
 RUN pacman --noconfirm -Syy && \
 	pacman --noconfirm -S git make sudo && \
+	groupadd sudo && \
 	echo "dockerci ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers && \
 	useradd -ms /bin/bash dockerci && \
 	echo "dockerci:dockerci" | chpasswd && \

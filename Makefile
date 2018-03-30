@@ -52,7 +52,7 @@ deps_ubuntu:
 	sudo npm install -g csslint jshint tern
 
 deps_arch:
-	sudo pacman --noconfirm -S emacs \
+	sudo pacman --noconfirm --quiet -S emacs \
 		python \
 		npm \
 		nodejs \
