@@ -1,8 +1,5 @@
 emacs ?= emacs
 
-PORTAGE_UNMASK=/etc/portage/package.unmask
-PORTAGE_ACCEPT=/etc/portage/package.accept_keywords
-
 .PHONY: gentoo
 .PHONY: ubuntu
 .PHONY: arch
@@ -24,33 +21,10 @@ test: clean build
 
 deps_gentoo:
 	sudo emerge --quiet --sync
-	echo "app-editors/emacs" | sudo tee -a ${PORTAGE_UNMASK} ${PORTAGE_ACCEPT}
-	echo "dev-lang/python" | sudo tee -a ${PORTAGE_UNMASK} ${PORTAGE_ACCEPT}
-	echo "dev-python/pip" | sudo tee -a ${PORTAGE_UNMASK} ${PORTAGE_ACCEPT}
-	echo "net-libs/nodejs" | sudo tee -a ${PORTAGE_UNMASK} ${PORTAGE_ACCEPT}
-	echo "sys-devel/clang" | sudo tee -a ${PORTAGE_UNMASK} ${PORTAGE_ACCEPT}
-	echo "dev-lang/go" | sudo tee -a ${PORTAGE_UNMASK} ${PORTAGE_ACCEPT}
-	echo "dev-lang/elixir" | sudo tee -a ${PORTAGE_UNMASK} ${PORTAGE_ACCEPT}
-	echo "dev-lang/rust" | sudo tee -a ${PORTAGE_UNMASK} ${PORTAGE_ACCEPT}
-	echo "dev-lisp/clisp" | sudo tee -a ${PORTAGE_UNMASK} ${PORTAGE_ACCEPT}
-	echo "dev-util/cargo" | sudo tee -a ${PORTAGE_UNMASK} ${PORTAGE_ACCEPT}
-	echo "virtual/rust" | sudo tee -a ${PORTAGE_UNMASK} ${PORTAGE_ACCEPT}
-	echo "net-libs/http-parser" | sudo tee -a ${PORTAGE_UNMASK} ${PORTAGE_ACCEPT}
-	echo "dev-libs/libuv" | sudo tee -a ${PORTAGE_UNMASK} ${PORTAGE_ACCEPT}
-	echo "sys-devel/clang-runtime" | sudo tee -a ${PORTAGE_UNMASK} ${PORTAGE_ACCEPT}
-	echo "sys-libs/libomp" | sudo tee -a ${PORTAGE_UNMASK} ${PORTAGE_ACCEPT}
-	echo "sys-libs/compiler-rt-sanitizers" | sudo tee -a ${PORTAGE_UNMASK} ${PORTAGE_ACCEPT}
-	echo "sys-devel/llvm" | sudo tee -a ${PORTAGE_UNMASK} ${PORTAGE_ACCEPT}
-	echo "sys-libs/compiler-rt" | sudo tee -a ${PORTAGE_UNMASK} ${PORTAGE_ACCEPT}
-	sudo emerge --quiet app-editors/emacs \
+	sudo emerge --quiet -k app-editors/emacs \
 		dev-lang/python \
 		dev-python/pip \
-		net-libs/nodejs \
-		sys-devel/clang \
-		dev-lang/go \
-		dev-lang/elixir \
-		dev-lang/rust \
-		dev-lisp/clisp
+		net-libs/nodejs
 	pip install --user -r requirements.txt
 	sudo npm install -g csslint jshint tern
 
