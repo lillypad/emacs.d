@@ -6,6 +6,7 @@ services:
 stages:
   - ubuntu
   - arch
+  - windows
   - gentoo
 
 jobs:
@@ -16,6 +17,9 @@ jobs:
     - stage: arch
       language: emacs-lisp
       script: docker build -f docker/arch/Dockerfile .
+    - stage: windows
+      language: emacs-lisp
+      script: docker build -f docker/windows/Dockerfile .
     - stage: gentoo
       language: emacs-lisp
       script: docker build -f docker/gentoo/Dockerfile .
