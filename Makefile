@@ -20,17 +20,11 @@ windows: deps_windows build
 test: clean build
 
 deps_gentoo:
-	sudo emerge --sync
-	sudo emerge --ask app-editors/emacs \
-		dev-lang/python \
+	sudo emerge --quiet --sync
+	sudo emerge --quiet app-editors/emacs \
 		dev-python/pip \
-		net-libs/nodejs \
-		sys-devel/clang \
-		dev-lang/go \
-		dev-lang/elixir \
-		dev-lang/rust
+		dev-python/virtualenv
 	pip install --user -r requirements.txt
-	sudo npm install -g csslint jshint tern
 
 deps_ubuntu:
 	sudo add-apt-repository ppa:ubuntu-elisp/ppa
@@ -52,17 +46,17 @@ deps_ubuntu:
 	sudo npm install -g csslint jshint tern
 
 deps_arch:
-	sudo pacman --noconfirm -S emacs \
+	sudo pacman --noconfirm --quiet -S emacs \
 		python \
 		npm \
 		nodejs \
 		clang \
 		git \
 		python-pip \
-		golang-go \
+		go \
 		elixir \
-		rustc \
-		cargo
+		rust \
+		clisp
 	sudo pip install -r requirements.txt
 	sudo npm install -g csslint jshint tern
 
