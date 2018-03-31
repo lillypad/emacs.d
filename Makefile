@@ -22,7 +22,8 @@ test: clean build
 deps_gentoo:
 	sudo emerge --quiet --sync
 	sudo emerge --quiet app-editors/emacs \
-		dev-python/pip
+		dev-python/pip \
+		dev-python/virtualenv
 	pip install --user -r requirements.txt
 
 deps_ubuntu:
