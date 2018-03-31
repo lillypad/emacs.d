@@ -35,6 +35,13 @@ deps_gentoo:
 	echo "dev-lisp/clisp" | sudo tee -a ${PORTAGE_UNMASK} ${PORTAGE_ACCEPT}
 	echo "dev-util/cargo" | sudo tee -a ${PORTAGE_UNMASK} ${PORTAGE_ACCEPT}
 	echo "virtual/rust" | sudo tee -a ${PORTAGE_UNMASK} ${PORTAGE_ACCEPT}
+	echo "net-libs/http-parser" | sudo tee -a ${PORTAGE_UNMASK} ${PORTAGE_ACCEPT}
+	echo "dev-libs/libuv" | sudo tee -a ${PORTAGE_UNMASK} ${PORTAGE_ACCEPT}
+	echo "sys-devel/clang-runtime" | sudo tee -a ${PORTAGE_UNMASK} ${PORTAGE_ACCEPT}
+	echo "sys-libs/libomp" | sudo tee -a ${PORTAGE_UNMASK} ${PORTAGE_ACCEPT}
+	echo "sys-libs/compiler-rt-sanitizers" | sudo tee -a ${PORTAGE_UNMASK} ${PORTAGE_ACCEPT}
+	echo "sys-devel/llvm" | sudo tee -a ${PORTAGE_UNMASK} ${PORTAGE_ACCEPT}
+	echo "sys-libs/compiler-rt" | sudo tee -a ${PORTAGE_UNMASK} ${PORTAGE_ACCEPT}
 	sudo emerge --quiet app-editors/emacs \
 		dev-lang/python \
 		dev-python/pip \
