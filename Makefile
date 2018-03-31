@@ -21,12 +21,9 @@ test: clean build
 
 deps_gentoo:
 	sudo emerge --quiet --sync
-	sudo emerge --quiet -k app-editors/emacs \
-		dev-lang/python \
-		dev-python/pip \
-		net-libs/nodejs
+	sudo emerge --quiet app-editors/emacs \
+		dev-python/pip
 	pip install --user -r requirements.txt
-	sudo npm install -g csslint jshint tern
 
 deps_ubuntu:
 	sudo add-apt-repository ppa:ubuntu-elisp/ppa
