@@ -14,4 +14,4 @@ USER root
 RUN chown -R dockerci:dockerci .emacs.d/
 USER dockerci
 WORKDIR /home/dockerci/.emacs.d/
-RUN make ubuntu
+RUN make debian
