@@ -15,9 +15,29 @@ ubuntu: deps_ubuntu build
 
 arch: deps_arch build
 
+debian: deps_debian build
+
 windows: deps_windows build
 
 test: clean build
+
+deps_debian:
+	sudo apt-get -qq update
+	sudo apt-get install -qq emacs \
+		python \
+		python-virtualenv \
+		npm \
+		nodejs \
+		git \
+		python-pip \
+		golang-go \
+		rustc \
+		cargo \
+		wget
+	wget https://packages.erlang-solutions.com/erlang-solutions_1.0_all.deb && sudo dpkg -i erlang-solutions_1.0_all.deb
+	rm -f erlang-solutions_1.0_all.deb
+	sudo pip install -r requirements.txt
+	sudo npm install -g csslint jshint tern	
 
 deps_gentoo:
 	sudo emerge --quiet --sync
@@ -28,7 +48,7 @@ deps_gentoo:
 
 deps_ubuntu:
 	sudo add-apt-repository ppa:ubuntu-elisp/ppa
-	sudo apt-get update
+	sudo apt-get -qq update
 	sudo apt-get install -qq emacs-snapshot \
 		python \
 		python-virtualenv \
