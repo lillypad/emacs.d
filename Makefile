@@ -4,6 +4,7 @@ emacs ?= emacs
 .PHONY: ubuntu
 .PHONY: arch
 .PHONY: windows
+.PHONY: debian
 .PHONY: test
 .PHONY: all
 
@@ -26,13 +27,11 @@ deps_debian:
 	sudo apt-get install -qq emacs \
 		python \
 		python-virtualenv \
-		npm \
 		nodejs \
 		git \
 		python-pip \
 		golang-go \
 		rustc \
-		cargo \
 		wget
 	wget https://packages.erlang-solutions.com/erlang-solutions_1.0_all.deb && sudo dpkg -i erlang-solutions_1.0_all.deb
 	rm -f erlang-solutions_1.0_all.deb
