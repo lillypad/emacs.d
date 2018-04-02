@@ -1,4 +1,4 @@
-images:
+image:
   - Visual Studio 2017
 
 clone_folder: C:\Users\Administrator\AppData\Roaming\.emacs.d
