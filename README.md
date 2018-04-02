@@ -106,6 +106,13 @@ cd ~/.emacs.d/
 make debian
 ```
 
+__Arch:__
+```bash
+git clone https://github.com/lillypad/emacs.d.git
+cd ~/.emacs.d/
+make arch
+```
+
 __Gentoo:__
 ```bash
 git clone https://github.com/lillypad/emacs.d.git
