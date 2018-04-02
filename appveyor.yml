@@ -1,0 +1,11 @@
+images:
+  - Visual Studio 2017
+
+clone_folder: C:\Users\Administrator\AppData\Roaming\.emacs.d
+  
+build_script:
+  - ps: Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
+  - cmd: choco upgrade chocolatey
+  - cmd: choco install -y git make
+  - cmd: cmd /s /k cd %APPDATA%
+  - cmd: make windows
