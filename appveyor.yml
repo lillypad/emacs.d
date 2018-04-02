@@ -1,7 +1,7 @@
 image:
   - Visual Studio 2017
 
-clone_folder: C:\Users\Administrator\AppData\Roaming\.emacs.d
+clone_folder: C:\Users\appveyor\AppData\Roaming\.emacs.d
   
 build_script:
   - ps: Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
