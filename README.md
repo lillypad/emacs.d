@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.org/lillypad/emacs.d.svg?branch=master)](https://travis-ci.org/lillypad/emacs.d)
+[![Build Status](https://ci.appveyor.com/api/projects/status/github/lillypad/emacs.d?svg=true&branch=master)](https://ci.appveyor.com/project/lillypad/emacs-d)
 [![GitHub license](https://img.shields.io/github/license/lillypad/emacs-lillypad.svg)](https://github.com/lillypad/emacs-lillypad/blob/master/LICENSE)
 [![Python 2](https://img.shields.io/badge/Python-2-brightgreen.svg)](https://github.com/lillypad/emacs-lillypad/)
 [![Python 3](https://img.shields.io/badge/Python-3-brightgreen.svg)](https://github.com/lillypad/emacs-lillypad/)
@@ -104,6 +105,13 @@ __Debian:__
 git clone https://github.com/lillypad/emacs.d.git
 cd ~/.emacs.d/
 make debian
+```
+
+__Arch:__
+```bash
+git clone https://github.com/lillypad/emacs.d.git
+cd ~/.emacs.d/
+make arch
 ```
 
 __Gentoo:__
