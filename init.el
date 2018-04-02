@@ -187,6 +187,7 @@
 
 (load "~/.emacs.d/packages/anarchy-theme.el")
 (load "~/.emacs.d/packages/hydra-helm.el")
+(load "~/.emacs.d/packages/commando.el")
 
 (setq compilation-finish-functions
   (lambda (buf str)

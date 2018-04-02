@@ -5,6 +5,7 @@ emacs ?= emacs
 .PHONY: arch
 .PHONY: windows
 .PHONY: debian
+.PHONY: osx
 .PHONY: test
 .PHONY: all
 
@@ -17,6 +18,8 @@ ubuntu: deps_ubuntu build
 arch: deps_arch build
 
 debian: deps_debian build
+
+osx: deps_osx build
 
 windows: deps_windows build
 
@@ -87,6 +90,11 @@ deps_windows:
 		clisp \
 		rust \
 		elixir
+	pip install -r requirements.txt
+	npm install -g csslint jshint tern
+
+deps_osx:
+	brew install emacs python nodejs
 	pip install -r requirements.txt
 	npm install -g csslint jshint tern
 
