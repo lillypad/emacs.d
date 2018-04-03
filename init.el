@@ -45,7 +45,9 @@
     (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/")))))
 
 (defvar required-packages
-  '(dockerfile-mode
+  '(auctex
+    company-auctex
+    dockerfile-mode
     yaml-mode
     ace-jump-mode
     ivy
@@ -131,6 +133,8 @@
     powerline
     airline-themes
     highlight-indent-guides))
+
+(defvar required-packages-latex '(auctex company-auctex))
 
 (defvar required-packages-docker '(dockerfile-mode))
 
@@ -218,7 +222,7 @@
  '(ediff-split-window-function (quote split-window-horizontally))
  '(package-selected-packages
    (quote
-    (dockerfile-mode yaml-mode js2-refactor jquery-doc highlight-indent-guides airline-themes powerline rainbow-delimiters cmake-mode clojure-mode company-php company-c-headers company-jedi company-tern company-quickhelp json-mode pos-tip popwin yasnippet-snippets tern js2-mode autopair markdown-mode flycheck-popup-tip flycheck-pycheckers flycheck php-mode magit slime-company slime company-go go-mode yara-mode actionscript-mode powershell alchemist elixir-yasnippets elixir-mode xterm-color helm-projectile projectile web-mode rust-mode neotree emmet-mode helm-swoop hydra rainbow-mode paredit ivy))))
+    (company-auctex auctex dockerfile-mode yaml-mode js2-refactor jquery-doc highlight-indent-guides airline-themes powerline rainbow-delimiters cmake-mode clojure-mode company-php company-c-headers company-jedi company-tern company-quickhelp json-mode pos-tip popwin yasnippet-snippets tern js2-mode autopair markdown-mode flycheck-popup-tip flycheck-pycheckers flycheck php-mode magit slime-company slime company-go go-mode yara-mode actionscript-mode powershell alchemist elixir-yasnippets elixir-mode xterm-color helm-projectile projectile web-mode rust-mode neotree emmet-mode helm-swoop hydra rainbow-mode paredit ivy))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

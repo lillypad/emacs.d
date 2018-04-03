@@ -94,7 +94,7 @@ deps_windows:
 	npm install -g csslint jshint tern
 
 deps_osx:
-	brew install emacs python nodejs
+	brew bundle
 	pip install -r requirements.txt
 	npm install -g csslint jshint tern
 
