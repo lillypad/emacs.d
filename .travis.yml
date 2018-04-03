@@ -14,7 +14,6 @@ stages:
   - debian
   - arch
   - gentoo
-  - osx
 
 jobs:
   include:
@@ -27,5 +26,4 @@ jobs:
     - stage: gentoo
       script: if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then docker build -f docker/gentoo/Dockerfile .; fi
 
-- stage: osx
-  script: if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then make osx; fi
+- script: if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then make osx; fi
