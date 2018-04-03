@@ -121,6 +121,13 @@ cd ~/.emacs.d/
 make gentoo
 ```
 
+__Mac OSX:__
+```bash
+git clone https://github.com/lillypad/emacs.d.git
+cd ~/.emacs.d/
+make osx
+```
+
 __Windows:__
 ```powershell
 Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
