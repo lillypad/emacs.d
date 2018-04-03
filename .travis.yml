@@ -1,5 +1,7 @@
 sudo: required
 
+language: emacs-lisp
+
 os:
   - linux
   - osx
@@ -12,22 +14,17 @@ stages:
   - debian
   - arch
   - gentoo
-  - osx
 
 jobs:
   include:
     - stage: ubuntu
-      language: emacs-lisp
       script: if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then docker build -f docker/ubuntu/Dockerfile .; fi
     - stage: debian
-      language: emacs-lisp
       script: if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then docker build -f docker/debian/Dockerfile .; fi
     - stage: arch
-      language: emacs-lisp
       script: if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then docker build -f docker/arch/Dockerfile .; fi
     - stage: gentoo
-      language: emacs-lisp
       script: if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then docker build -f docker/gentoo/Dockerfile .; fi
-    - stage: osx
-      language: emacs-lisp
-      script: if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then make osx; fi
+
+script:
+  - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then make osx; fi
