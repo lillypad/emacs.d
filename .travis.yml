@@ -5,10 +5,10 @@ language: emacs-lisp
 os: linux
 
 services:
-  - docker
+  docker # add a dash before this if you add another service in the future 
 
 stages:
-  - Multi-Build
+  Multi-Build # add a dash before this if you add another stage in the future 
 
 jobs:
   include:
