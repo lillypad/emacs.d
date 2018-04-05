@@ -2,30 +2,20 @@ sudo: required
 
 language: emacs-lisp
 
-os:
-  - linux
-  - osx
+os: linux
 
 services:
   - docker
 
 stages:
-  - ubuntu
-  - debian
-  - arch
-  - gentoo
-  - osx
+  - Multi-Build
 
 jobs:
   include:
-    - stage: ubuntu
-      script: if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then docker build -f docker/ubuntu/Dockerfile .; fi
-    - stage: debian
-      script: if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then docker build -f docker/debian/Dockerfile .; fi
-    - stage: arch
-      script: if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then docker build -f docker/arch/Dockerfile .; fi
-    - stage: gentoo
-      script: if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then docker build -f docker/gentoo/Dockerfile .; fi
-
-script:
-  - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then make osx; fi
+    - stage:  Multi-Build
+      script: docker build -f docker/ubuntu/Dockerfile .
+    - script: docker build -f docker/debian/Dockerfile .
+    - script: docker build -f docker/arch/Dockerfile .
+    - script: docker build -f docker/gentoo/Dockerfile .
+    - os: osx
+      script: make osx
