@@ -37,6 +37,14 @@
             airline-utf-glyph-branch              #xe0a0
             airline-utf-glyph-readonly            #xe0a2
             airline-utf-glyph-linenumber          #xe0a1))))
+  (dashboard-setup-startup-hook)
+  (setq dashboard-items '((recents  . 5)
+                          (bookmarks . 5)
+                          (projects . 5)
+                          (agenda . 5)
+                          (registers . 5)))
+  (setq dashboard-banner-logo-title "Anarchists Emacs")
+  (setq dashboard-startup-banner "~/.emacs.d/img/anarchy.png")
   (add-hook 'prog-mode-hook 'rainbow-delimiters-mode)
   (set-face-background 'vertical-border "#404040")
   (set-face-attribute 'region nil :background "#666")
@@ -59,10 +67,10 @@
    '(rainbow-delimiters-depth-7-face ((t (:foreground "spring green"))))
    '(rainbow-delimiters-depth-8-face ((t (:foreground "sienna1")))))
   (if (display-graphic-p)
-    (progn
-      (menu-bar-mode -1)
-      (tool-bar-mode -1)
-      (scroll-bar-mode -1))
+      (progn
+        (menu-bar-mode -1)
+        (tool-bar-mode -1)
+        (scroll-bar-mode -1))
     (menu-bar-mode -1)))
 
 ;;; theme.el ends here

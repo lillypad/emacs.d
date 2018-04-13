@@ -59,6 +59,7 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.We
 - Paredit
 - Ivy
 - Ace Jump
+- Dashboard
 
 # Supported Languages:
 - Lisp
