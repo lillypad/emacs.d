@@ -7,6 +7,9 @@
 
 (defun my/theme-setup ()
   "Custom Theme Setup Function."
+  (menu-bar-mode -1)
+  (tool-bar-mode -1)
+  (scroll-bar-mode -1)
   (cond
    ((string-equal system-type "windows-nt")
     (progn
