@@ -115,3 +115,4 @@ clean:
 	rm -rf snippets/
 	rm -rf eshell/
 	rm -f projectile-bookmarks.eld
+	rm -rf .python-environments/
