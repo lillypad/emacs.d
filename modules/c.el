@@ -10,6 +10,7 @@
   (dolist (p required-packages-c)
     (require p))
   (add-to-list 'company-backends 'company-c-headers)
+  (add-to-list 'company-c-headers-path-system "/usr/src/linux/include")
   (autopair-mode)
   (setq c-basic-offset 2)
   (setq auto-mode-alist

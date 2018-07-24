@@ -5,6 +5,10 @@
 
 ;;; Code:
 
+(defun eshell/clear ()
+  "EShell Clear Buffer."
+  (interactive)
+  (let ((eshell-buffer-maximum-lines 0)) (eshell-truncate-buffer)))
 (xterm-mouse-mode)
 (setq ring-bell-function 'ignore)
 (setq-default tab-width 4)
